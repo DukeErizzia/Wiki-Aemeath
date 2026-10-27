@@ -1,0 +1,617 @@
+/* ==========================================================================
+   BASE PAGE LAYOUT STYLES
+   ========================================================================== */
+
+body {
+    background-color: #1d2530;
+}
+
+/* TOP OF PAGE CATEGORIES AND TITLE */
+.page-header__categories-in {
+    color: whitesmoke;
+}   
+
+.in_links, .in_links * {        
+    color: #5897fe;
+}
+
+.mw-page-title-main {
+    color: #ffffff; 
+    font-size: 45px;
+}
+
+/* NAVIGATION LINKS BOX STYLE */
+.boxed-link {
+    background-color: rgb(48, 101, 176, 0.5);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: bold;
+    text-decoration: none; 
+    border: 2px solid #333333;
+    border-radius: 6px;        
+    padding: 10px 20px;        
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.boxed-link:hover {
+    background-color: #3065b0;
+    color: #333333;
+}
+
+.boxed-link.active-tab {
+    background-color: #3065b0; 
+    color: #fdfeff;            
+    border-color: #3065b0;
+    font-weight: bold;
+    pointer-events: none;      
+}
+
+/* CONTAINER AND TEXT SECTIONS */
+.main-content-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;      
+    padding: 20px;                  
+    gap: 40px;                      
+}
+
+.left-text-content {
+    flex: 1;                       
+    color: #ffffff;                
+}
+
+.left_text {
+    font-size: 18px;
+}
+
+.text-fusion, .text-fusion * {
+    color: #f0744e;
+}
+
+.right-image-content {
+    flex-shrink: 0;                
+}
+
+.right-image-content img {
+    max-width: 100%;                
+}
+
+/* BLOCKQUOTE STYLING */
+.quote__text {
+    margin-bottom: 0;
+    overflow-wrap: break-word;
+}
+
+blockquote.quote {
+    margin: 12px 0;
+    font-style: normal;
+    background: #4e57741a;
+    border-left: 3px solid #3c4f6a;
+    overflow: hidden;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 30px;
+    font: bold;
+}
+
+blockquote.quote::before {
+    content: '“';
+    display: block;
+    font-family: 'serif';
+    font-size: 50px;
+    line-height: 1em;
+    margin: 0 0 -20px -20px;
+    color: #5897fe;
+}
+
+blockquote.quote::after {
+    content: '”';
+    display: block; 
+    font-family: 'serif';
+    font-size: 50px;
+    line-height: 1em;
+    margin: 0 -20px -10px 0;
+    float: right;
+    color: #5897fe;
+}
+
+
+/* ==========================================================================
+   SELF-CONTAINED WIKI INFOBOX CORE MODULE
+   ========================================================================== */
+
+.wiki-infobox {
+    width: 320px;
+    background-color: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   INFOBOX TOP TITLE HEADER 
+   ========================================================================== */
+   
+/* Top block: Solid blue header */
+.wiki-infobox__title-banner {
+    background-color: #2b549c;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+/* Bottom block: Midnight dark subtitle block */
+.wiki-infobox__subtitle-banner {
+    background-color: #1c1c24;
+    color: #3f7bf3; /* Vibrant blue link text color from your layout image */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid #3c3c52;
+}
+
+
+/* ARTWORK DISPLAY COMPONENT */
+.wiki-infobox__image-wrap {
+    width: 100%;
+    background-color: #161622;
+    line-height: 0; 
+}
+
+.wiki-infobox__image-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* RARITY PANEL FOOTER */
+.wiki-infobox__footer {
+    background-color: #1f1f2e;
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #3c3c52;
+}
+
+.wiki-infobox__rarity-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a0a0b8;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.wiki-infobox__stars {
+    color: #f1a84b;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+
+/* ==========================================================================
+   WIKI INFOBOX DATA EXPANSION MODULE
+   ========================================================================== */
+
+/* ATTRIBUTE & WEAPON GRID DECORATORS */
+.wiki-infobox__split-row {
+    display: flex;
+    border-top: 1px solid #3c3c52;
+    background-color: #242433;
+}
+
+.wiki-infobox__split-cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.wiki-infobox__split-cell:first-child {
+    border-right: 1px solid #3c3c52;
+}
+
+.wiki-infobox__cell-title {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5897fe;
+    margin-bottom: 4px;
+}
+
+.wiki-infobox__cell-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wiki-infobox__cell-value.value-fusion {
+    color: #f0744e;
+}
+
+.wiki-infobox__cell-value.value-sword {
+    color: #a0a0b8;
+}
+
+/* COMBAT INFO ACCORDION PANELS */
+.wiki-infobox__lists-panel {
+    background-color: #20202c;
+    border-top: 1px solid #3c3c52;
+    padding: 12px;
+}
+
+.wiki-infobox__list-section {
+    margin-bottom: 12px;
+}
+
+.wiki-infobox__list-section:last-child {
+    margin-bottom: 0;
+}
+
+.wiki-infobox__list-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #5897fe;
+    margin-bottom: 6px;
+}
+
+.wiki-infobox__bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wiki-infobox__bullet-list li {
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    overflow-wrap: anywhere;
+}
+
+.wiki-infobox__bullet-list a {
+    color: #5897fe;
+    text-decoration: none;
+}
+
+.wiki-infobox__bullet-list a:hover {
+    text-decoration: underline;
+}
+ 
+.wiki-infobox__mini-icon {
+    margin-right: 2px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* INNER BIOGRAPHY CONTAINER TABS */
+.wiki-infobox__sub-tabs {
+    display: flex;
+    background-color: #1a1a24;
+    border-top: 1px solid #3c3c52;
+    border-bottom: 1px solid #3c3c52;
+}
+
+.wiki-infobox__sub-tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #a0a0b8;
+    cursor: pointer;
+}
+
+.wiki-infobox__sub-tab.active {
+    color: #ffffff;
+    background-color: #242433;
+    border-bottom: 2px solid #3f7bf3;
+}
+
+/* PROFILE METADATA DATA TABLE SETUP */
+.wiki-infobox__data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242433;
+}
+
+.wiki-infobox__data-table th,
+.wiki-infobox__data-table td {
+    padding: 8px 12px;
+    font-size: 13px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #2d2d3f;
+    line-height: 1.4;
+}
+
+.wiki-infobox__data-table th {
+    width: 35%;
+    color: #5897fe;
+    font-weight: bold;
+}
+
+.wiki-infobox__data-table td {
+    color: #ffffff;
+}
+
+/* DECORATIVE LINKS AND FORMATTERS */
+.wiki-infobox__blue-link {
+    color: #5897fe;
+    text-decoration: none;
+}
+
+.wiki-infobox__blue-link:hover {
+    text-decoration: underline;
+}
+
+.wiki-infobox__citation {
+    color: #5897fe;
+    font-size: 10px;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.wiki-infobox__time-ago {
+    font-size: 11px;
+    color: #a0a0b8;
+}
+
+/* SPECIAL DISH ITEM GRAPHIC BOX */
+.wiki-infobox__special-row td {
+    text-align: center !important;
+    padding: 10px 12px;
+}
+
+.wiki-infobox__special-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #5897fe;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.wiki-infobox__dish-box {
+    width: 110px;
+    margin: 0 auto;
+    background-color: #111116;
+    border: 1px solid #44445c;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.wiki-infobox__dish-img {
+    display: block;
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    background: linear-gradient(180deg, #3a2f56, #211936);
+}
+
+.wiki-infobox__dish-name {
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 6px 4px;
+    background-color: #1a1a24;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ====================================================
+   TAB PANELS
+   ==================================================== */
+
+.wiki-infobox__data-table[hidden] {
+    display: none;
+}
+
+.wiki-infobox__sub-tab {
+    border-bottom: 2px solid transparent;
+    user-select: none;
+}
+
+.wiki-infobox__sub-tab:hover {
+    color: #ffffff;
+}
+
+.wiki-infobox__sub-tab:focus-visible {
+    outline: 2px solid #3f7bf3;
+    outline-offset: -2px;
+}
+
+/* ====================================================
+   TABLE OF CONTENTS 
+   ==================================================== */
+
+.toc {
+    
+    clear: both; 
+    float: left;
+    display: table;
+    
+    background-color: #1d2530;
+    border: 4px solid #dcc9c9;
+    border-radius: 3px;
+    padding: 6px;
+    margin: 24px auto 24px 0; 
+    font-size: 95%;
+}
+
+.toc .toc-title {
+    align-items: center;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 12px;
+    text-align: center;
+    direction: ltr;
+}
+
+.tog-togglecheckbox {
+    display: none !important;
+}
+
+.toc .toc-title h2 {
+    align-items: center;
+    border: 0;
+    color: var(--theme-page-text-color);
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+
+.wds-icon {
+    fill: currentcolor;
+    margin-right: 10px;
+}
+
+.toc .toctitle h2 .wds-icon {
+    margin-right: 6px;
+}
+
+.toc .toc-title::after {
+    content: '[hide]';
+    color: #5897fe;              
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc > ul > li {
+    padding: 6px 16px;
+}
+
+.toc > ul > li > a {
+    font-weight: 600;              
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.toc ul ul {
+    padding-left: 20px;            
+    margin-top: 4px;
+}
+
+.toc ul ul li {
+    padding: 4px 0;
+}
+
+.toc ul ul a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #e2e8f0;              
+}
+
+.toc a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.15s ease;
+}
+
+.toc a:hover {
+    color: #5897fe;               
+}
+
+.toc .tocnumber {
+    color: #718096;               
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.toc .toc-title {
+    cursor: pointer;
+}
+
+.toc.toc-collapsed > ul {
+    display: none;
+}
+
+.toc.toc-collapsed .toc-title {
+    border-bottom-style: none;
+}
+
+.toc.toc-collapsed .toc-title::after {
+    content: '[show]';
+}
+
+/* ====================================================
+   RESPONSIVE
+   ==================================================== */
+
+@media (max-width: 900px) {
+    /* Stack the text and infobox vertically */
+    .main-content-container {
+        flex-direction: column;
+        gap: 24px;
+        padding: 12px;
+    }
+
+    /* Infobox fills the width (capped) and moves above the text, like Fandom */
+    .wiki-infobox {
+        order: -1;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .left-text-content {
+        width: 100%;
+    }
+
+    /* Contents box: stop floating, fill the width */
+    .toc {
+        float: none;
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .mw-page-title-main {
+        font-size: 32px;
+    }
+
+    .left_text {
+        font-size: 16px;
+    }
+
+    /* Smaller nav buttons that wrap neatly */
+    .boxed-link {
+        font-size: 16px;
+        padding: 8px 14px;
+        margin-right: 8px;
+    }
+
+    .quote {
+        padding: 0 20px;
+    }
+}

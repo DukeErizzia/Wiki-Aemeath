@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aero Strike - Aemeath Edition (Fixed)</title>
+    <link rel="stylesheet" href="../../CSS/Arcade/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../../index.html" style="color:inherit">&larr; Back to Aemeath</a>
+        <h1>Aero Strike</h1>
+        <p>Retro Arcade Shooter Terminal</p>
+    </header>
+
+    <div class="game-container">
+        <div class="ui-panel">
+            SCORE: <span id="score-val">0</span> &nbsp;|&nbsp;
+            LIVES: <span id="lives-val">❤️❤️❤️</span>
+        </div>
+
+        <canvas id="gameCanvas" width="500" height="600"></canvas>
+
+        <div id="game-over-screen">
+            <h2>GAME OVER</h2>
+            <div id="final-score"></div>
+            <button id="restart-btn">Insert Coin / Restart</button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <b>Left / Right</b> or <b>A / D</b> to move. Hold <b>Spacebar</b> or <b>Right Mouse Button</b> to fire. <b>Enter</b> restarts.<br>
+        On touch devices: drag on the screen to move, and Aemeath fires while you hold.<br>
+        <span class="warn">A boss arrives every time you cross its score mark. Each one is tougher than the last!</span>
+    </div>
+
+    <script src="../../JS/arcade.js"></script>
+
+</body>
+</html>

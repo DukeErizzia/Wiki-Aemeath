@@ -1,0 +1,72 @@
+/* ==========================================================================
+   BASE PAGE LAYOUT STYLES
+   ========================================================================== */
+
+body {
+    background-color: #1d2530;
+}
+
+/* TOP OF PAGE CATEGORIES AND TITLE */
+.page-header__categories-in {
+    color: whitesmoke;
+}   
+
+.in_links, .in_links * {
+    color: #5897fe;
+}
+
+.mw-page-title-main {
+    color: #ffffff; 
+    font-size: 45px;
+}
+
+/* NAVIGATION LINKS BOX STYLE */
+.boxed-link {
+    background-color: rgb(48, 101, 176, 0.5);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: bold;
+    text-decoration: none; 
+    border: 2px solid #333333;
+    border-radius: 6px;        
+    padding: 10px 20px;        
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.boxed-link:hover {
+    background-color: #3065b0;
+    color: #333333;
+}
+
+.boxed-link.active-tab {
+    background-color: #3065b0; 
+    color: #fdfeff;            
+    border-color: #3065b0;
+    font-weight: bold;
+    pointer-events: none;      
+}
+
+/* ==========================================================================
+   VOICELINES PAGE
+   ========================================================================== */
+
+.voice-search {
+    width: 100%; max-width: 360px; box-sizing: border-box; padding: 8px 12px;
+    background: #1a1a24; color: #ffffff; border: 1px solid #3c3c52; border-radius: 4px; font-size: 15px;
+}
+.voice-search:focus { outline: 2px solid #3f7bf3; border-color: transparent; }
+
+.voice-table th { width: 18%; }
+.voice-table td:last-child { width: 110px; white-space: nowrap; }
+.voice-table tr.hidden-row { display: none; }
+.play-btn.playing { background: #f0744e; }
+.play-btn.no-audio { background: #44445c; cursor: not-allowed; }
+.voice-empty { color: #a0a0b8; }
+.page-content code { background: #1a1a24; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+
+@media (max-width: 600px) {
+    .voice-table th, .voice-table td { padding: 8px; font-size: 14px; }
+    .voice-table td:last-child { width: auto; }
+}

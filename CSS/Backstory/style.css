@@ -1,0 +1,87 @@
+/* ==========================================================================
+   BASE PAGE LAYOUT STYLES
+   ========================================================================== */
+
+body {
+    background-color: #1d2530;
+}
+
+/* TOP OF PAGE CATEGORIES AND TITLE */
+.page-header__categories-in {
+    color: whitesmoke;
+}   
+
+.in_links, .in_links * {
+    color: #5897fe;
+}
+
+.mw-page-title-main {
+    color: #ffffff; 
+    font-size: 45px;
+}
+
+/* NAVIGATION LINKS BOX STYLE */
+.boxed-link {
+    background-color: rgb(48, 101, 176, 0.5);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: bold;
+    text-decoration: none; 
+    border: 2px solid #333333;
+    border-radius: 6px;        
+    padding: 10px 20px;        
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.boxed-link:hover {
+    background-color: #3065b0;
+    color: #333333;
+}
+
+.boxed-link.active-tab {
+    background-color: #3065b0; 
+    color: #fdfeff;            
+    border-color: #3065b0;
+    font-weight: bold;
+    pointer-events: none;      
+}
+
+/* ==========================================================================
+   BACKSTORY PAGE
+   ========================================================================== */
+
+.backstory-layout { display: flex; gap: 32px; align-items: flex-start; }
+.backstory-article { flex: 1; min-width: 0; }
+.backstory-article h2:first-child { margin-top: 0; }
+
+.backstory-toc {
+    position: sticky; top: 16px; width: 220px; flex-shrink: 0;
+    background: #242433; border: 1px solid #3c3c52; border-radius: 4px; padding: 10px 0;
+}
+.backstory-toc__title { padding: 0 14px 8px; font-weight: bold; font-size: 14px; color: #a0a0b8; border-bottom: 1px solid #2d2d3f; }
+.backstory-toc ul { list-style: none; margin: 6px 0 0; padding: 0; }
+.backstory-toc a {
+    display: block; padding: 5px 14px; font-size: 14px; color: #e2e8f0 !important;
+    border-left: 3px solid transparent; text-decoration: none !important;
+}
+.backstory-toc li.sub a { padding-left: 28px; font-size: 13px; }
+.backstory-toc a:hover { color: #5897fe !important; }
+.backstory-toc a.current { border-left-color: #3f7bf3; color: #ffffff !important; background: #2d2d3f; }
+
+.timeline { border-left: 2px solid #3c3c52; margin: 0; padding: 0 0 0 22px; list-style: none; }
+.timeline li { position: relative; padding: 6px 0 14px; font-size: 16px; line-height: 1.5; }
+.timeline li::before {
+    content: ''; position: absolute; left: -29px; top: 12px; width: 10px; height: 10px;
+    background: #3f7bf3; border-radius: 50%;
+}
+.timeline strong { color: #f1a84b; margin-right: 6px; }
+
+html { scroll-behavior: smooth; }
+.backstory-article h2, .backstory-article h3 { scroll-margin-top: 16px; }
+
+@media (max-width: 800px) {
+    .backstory-layout { flex-direction: column; }
+    .backstory-toc { position: static; width: 100%; box-sizing: border-box; }
+}

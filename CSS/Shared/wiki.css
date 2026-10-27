@@ -1,0 +1,90 @@
+/* ==========================================================================
+   SHARED COMPONENTS (used by Combat, Backstory, Outfits, Voicelines, Gallery)
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 8px 20px 40px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+nav { display: flex; flex-wrap: wrap; }
+
+.page-content { max-width: 1100px; padding: 0 0 20px; }
+
+.page-content h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 34px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #3c3c52;
+}
+.page-content h3 { color: #ffffff; font-size: 21px; margin: 26px 0 10px; }
+.page-content p  { font-size: 17px; line-height: 1.6; }
+.page-content a  { color: #5897fe; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+
+/* Marks content you still need to replace */
+.placeholder-note {
+    border: 1px dashed #f1a84b;
+    background: #f1a84b14;
+    color: #f1c27d;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* ---- Tabs (driven by JS/tabs.js) ---- */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid #3c3c52; }
+.wiki-tab {
+    background: #1a1a24;
+    color: #a0a0b8;
+    border: 1px solid #3c3c52;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+.wiki-tab:hover { color: #ffffff; }
+.wiki-tab.active { color: #ffffff; background: #242433; border-bottom-color: #3f7bf3; }
+.wiki-tab:focus-visible { outline: 2px solid #3f7bf3; outline-offset: 1px; }
+.wiki-panel { background: #242433; border: 1px solid #3c3c52; border-top: none; padding: 14px 16px; }
+.wiki-panel[hidden] { display: none; }
+
+/* ---- Generic wiki table ---- */
+.wiki-table { width: 100%; border-collapse: collapse; background: #242433; }
+.wiki-table th, .wiki-table td {
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 15px;
+    border-bottom: 1px solid #2d2d3f;
+}
+.wiki-table th { color: #5897fe; width: 28%; }
+.wiki-table thead th { background: #1c1c24; width: auto; }
+
+.wiki-button {
+    background: #3065b0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+.wiki-button:hover { background: #3f7bf3; }
+
+@media (max-width: 600px) {
+    body { padding: 4px 12px 30px; }
+    .mw-page-title-main { font-size: 32px; }
+    .boxed-link { font-size: 15px; padding: 8px 12px; margin-right: 6px; }
+    .page-content h2 { font-size: 23px; }
+    .page-content p  { font-size: 16px; }
+    .wiki-tab { padding: 7px 10px; font-size: 13px; }
+}

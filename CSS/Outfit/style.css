@@ -1,0 +1,80 @@
+/* ==========================================================================
+   BASE PAGE LAYOUT STYLES
+   ========================================================================== */
+
+body {
+    background-color: #1d2530;
+}
+
+/* TOP OF PAGE CATEGORIES AND TITLE */
+.page-header__categories-in {
+    color: whitesmoke;
+}   
+
+.in_links, .in_links * {
+    color: #5897fe;
+}
+
+.mw-page-title-main {
+    color: #ffffff; 
+    font-size: 45px;
+}
+
+/* NAVIGATION LINKS BOX STYLE */
+.boxed-link {
+    background-color: rgb(48, 101, 176, 0.5);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: bold;
+    text-decoration: none; 
+    border: 2px solid #333333;
+    border-radius: 6px;        
+    padding: 10px 20px;        
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.boxed-link:hover {
+    background-color: #3065b0;
+    color: #333333;
+}
+
+.boxed-link.active-tab {
+    background-color: #3065b0; 
+    color: #fdfeff;            
+    border-color: #3065b0;
+    font-weight: bold;
+    pointer-events: none;      
+}
+
+/* ==========================================================================
+   OUTFITS PAGE
+   ========================================================================== */
+
+.outfit-layout { display: flex; gap: 24px; align-items: flex-start; }
+
+.outfit-viewer {
+    width: 320px; flex-shrink: 0; background: #242433; border: 1px solid #3c3c52;
+    border-radius: 4px; overflow: hidden; text-align: center;
+}
+.outfit-viewer img { display: block; width: 100%; height: 380px; object-fit: cover; background: #161622; }
+.outfit-viewer h3 { margin: 12px 12px 4px !important; }
+.outfit-viewer p { margin: 0 12px 14px; color: #c9cfdb; font-size: 15px !important; }
+
+.outfit-grid { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
+.outfit-card {
+    background: #242433; border: 2px solid #3c3c52; border-radius: 4px; padding: 0;
+    cursor: pointer; overflow: hidden; color: #ffffff; font-family: inherit; font-size: 13px;
+}
+.outfit-card img { display: block; width: 100%; height: 120px; object-fit: cover; }
+.outfit-card span { display: block; padding: 8px 6px; }
+.outfit-card:hover { border-color: #5897fe; }
+.outfit-card.selected { border-color: #3f7bf3; box-shadow: 0 0 0 2px #3f7bf355; }
+.outfit-card:focus-visible { outline: 2px solid #f1a84b; outline-offset: 2px; }
+
+@media (max-width: 800px) {
+    .outfit-layout { flex-direction: column; }
+    .outfit-viewer { width: 100%; max-width: 420px; margin: 0 auto; }
+    .outfit-grid { width: 100%; }
+}
