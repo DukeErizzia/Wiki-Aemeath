@@ -2,11 +2,9 @@
    SHARED COMPONENTS (used by Combat, Backstory, Outfits, Voicelines, Gallery)
    ========================================================================== */
 
+/* Same as the Overview page: browser-default font and margins, white text. */
 body {
-    margin: 0;
-    padding: 8px 20px 40px;
     color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 nav { display: flex; flex-wrap: wrap; }
@@ -87,4 +85,72 @@ nav { display: flex; flex-wrap: wrap; }
     .page-content h2 { font-size: 23px; }
     .page-content p  { font-size: 16px; }
     .wiki-tab { padding: 7px 10px; font-size: 13px; }
+}
+
+
+/* ==========================================================================
+   TABLE OF CONTENTS  (same design as the Overview page)
+   ========================================================================== */
+
+.toc {
+    clear: both;
+    float: left;
+    display: table;
+    background-color: #1d2530;
+    border: 4px solid #dcc9c9;
+    border-radius: 3px;
+    padding: 6px;
+    margin: 24px auto 24px 0;
+    font-size: 95%;
+}
+
+.toc .toc-title {
+    align-items: center;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 12px;
+    text-align: center;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.toc .toc-title::after { content: '[hide]'; color: #5897fe; font-size: 13px; cursor: pointer; }
+
+.tog-togglecheckbox { display: none !important; }
+
+.page-content .toc .toc-title h2 {
+    align-items: center;
+    border: 0;
+    color: #ffffff;
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+
+.wds-icon { fill: currentcolor; margin-right: 10px; }
+
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc > ul > li { padding: 6px 16px; }
+.toc ul ul { padding-left: 20px; margin-top: 4px; }
+.toc ul ul li { padding: 4px 0; }
+
+.page-content .toc a { text-decoration: none; display: inline-flex; align-items: center; transition: color 0.15s ease; }
+.page-content .toc > ul > li > a { font-weight: 600; font-size: 15px; color: #ffffff; }
+.page-content .toc ul ul a { font-weight: 500; font-size: 14px; color: #e2e8f0; }
+.page-content .toc a:hover { color: #5897fe; text-decoration: none; }
+
+.toc .tocnumber { color: #718096; padding-right: 8px; display: inline-block; }
+
+.toc.toc-collapsed > ul { display: none; }
+.toc.toc-collapsed .toc-title { border-bottom-style: none; }
+.toc.toc-collapsed .toc-title::after { content: '[show]'; }
+
+@media (max-width: 900px) {
+    .toc { float: none; display: block; width: auto; }
 }

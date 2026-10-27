@@ -18,9 +18,11 @@
         <span class="page-header__categories-in">In:
             <a href="https://fandom.com" title="Category:Aemeath" class="in_links">Aemeath</a>
             ,
-            <a href="https://fandom.com" title="Category:Resonators" class="in_links">Resonators</a>
+            <a href="https://fandom.com" title="Category:Resonator Combat" class="in_links">Resonator Combat</a>
             ,
-            <a href="https://fandom.com" title="Category:Main Damage Dealer Resonators" class="in_links">Main Damage Dealer Resonators</a>
+            <a href="https://fandom.com" title="Category:ATK Scaling Skill Characters" class="in_links">ATK Scaling Skill Characters</a>
+            ,
+            <a href="https://fandom.com" title="Category:Tune AMP Scaling Skill Characters" class="in_links">Tune AMP Scaling Skill Characters</a>
         </span>
     </div>
 
@@ -35,11 +37,11 @@
 
     <nav>
         <a href="../../index.html" class="boxed-link">Overview</a>
-        <a href="../Combat/combat.html" class="boxed-link active-tab">Combat</a>
+        <a href="../Combat/combat.html" class="boxed-link">Combat</a>
         <a href="../Backstory/backstory.html" class="boxed-link">Backstory</a>
         <a href="../Outfits/outfits.html" class="boxed-link">Outfits</a>
         <a href="../Voicelines/voicelines.html" class="boxed-link">Voicelines</a>
-        <a href="../Gallery/gallery.html" class="boxed-link">Gallery</a>
+        <a href="../Gallery/gallery.html" class="boxed-link active-tab">Gallery</a>
     </nav>
 
     <hr>
@@ -47,158 +49,1197 @@
 </header>
 
 <main class="page-content">
-<p class="placeholder-note">Placeholder content: replace the marked text and images with the real details.</p>
-
-<section id="Combat_Overview">
-    <h2>Combat Overview</h2>
-    <p>[Short summary of how Aemeath plays: role, damage type, and team fit.]</p>
-
-    <h3 id="Ascension_Materials">Ascension Materials</h3>
-    <div class="material-grid">
-            <div class="material-card">
-                <div class="material-card__img">Image</div>
-                <div class="material-card__name">[Material 1]</div>
-                <div class="material-card__qty">x[0]</div>
-            </div>
-            <div class="material-card">
-                <div class="material-card__img">Image</div>
-                <div class="material-card__name">[Material 2]</div>
-                <div class="material-card__qty">x[0]</div>
-            </div>
-            <div class="material-card">
-                <div class="material-card__img">Image</div>
-                <div class="material-card__name">[Material 3]</div>
-                <div class="material-card__qty">x[0]</div>
-            </div>
-            <div class="material-card">
-                <div class="material-card__img">Image</div>
-                <div class="material-card__name">[Material 4]</div>
-                <div class="material-card__qty">x[0]</div>
-            </div>
-            <div class="material-card">
-                <div class="material-card__img">Image</div>
-                <div class="material-card__name">[Material 5]</div>
-                <div class="material-card__qty">x[0]</div>
-            </div>
-            <div class="material-card">
-                <div class="material-card__img">Image</div>
-                <div class="material-card__name">[Material 6]</div>
-                <div class="material-card__qty">x[0]</div>
-            </div>
+    <div id="toc" class="toc toc-initialized" role="navigation" aria-labelledby="mw-toc-heading">
+        <input type="checkbox" role="button" id="toc-togglecheckbox" class="tog-togglecheckbox" aria-label="show">
+        <div class="toc-title">
+            <h2 id="mw-toc-heading"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="wds-icon wds-icon-tiny"><path d="M2 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM5 1.5h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/></svg>Contents</h2>
+        </div>
+        <ul>
+            <li class="toclevel-1 tocsection-1"><a href="#Instructions"><span class="tocnumber">1</span><span class="toctext">Instructions</span></a></li>
+            <li class="toclevel-1 tocsection-2"><a href="#Ascensions_and_Stats"><span class="tocnumber">2</span><span class="toctext">Ascensions and Stats</span></a></li>
+            <li class="toclevel-1 tocsection-3">
+                <a href="#Forte"><span class="tocnumber">3</span><span class="toctext">Forte</span></a>
+                <ul>
+                    <li class="toclevel-2 tocsection-4"><a href="#Details"><span class="tocnumber">3.1</span><span class="toctext">Details</span></a></li>
+                    <li class="toclevel-2 tocsection-5">
+                        <a href="#Skill_Costs"><span class="tocnumber">3.2</span><span class="toctext">Skill Costs</span></a>
+                        <ul>
+                            <li class="toclevel-3 tocsection-6"><a href="#Main_Forte"><span class="tocnumber">3.2.1</span><span class="toctext">Main Forte</span></a></li>
+                            <li class="toclevel-3 tocsection-7"><a href="#Inherent_Skills"><span class="tocnumber">3.2.2</span><span class="toctext">Inherent Skills</span></a></li>
+                            <li class="toclevel-3 tocsection-8"><a href="#Stat_Bonuses"><span class="tocnumber">3.2.3</span><span class="toctext">Stat Bonuses</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="toclevel-1 tocsection-9"><a href="#Resonance_Chain"><span class="tocnumber">4</span><span class="toctext">Resonance Chain</span></a></li>
+            <li class="toclevel-1 tocsection-10"><a href="#Trophies"><span class="tocnumber">5</span><span class="toctext">Trophies</span></a></li>
+            <li class="toclevel-1 tocsection-11"><a href="#Navigation"><span class="tocnumber">6</span><span class="toctext">Navigation</span></a></li>
+        </ul>
     </div>
-
-    <h3 id="Forte">Forte</h3>
-    <div data-tabs>
-        <div class="wiki-tabs" role="tablist">
-            <button class="wiki-tab" role="tab" data-tab="normal">Normal Attack</button>
+    <section id="Instructions-section">
+        <h2 id="Instructions">Instructions</h2>
+        <figure class="gauge"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/21/Aemeath_Forte_Gauge.png/revision/latest?cb=20260207035117" alt="Aemeath Forte Gauge" loading="lazy"></figure>
+        <p>Restore <span class="kw">Synchronization Rate</span> through attacks.</p>
+        <figure class="gauge"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a4/Aemeath_Forte_Gauge_2.png/revision/latest?cb=20260207035211" alt="Aemeath Forte Gauge 2" loading="lazy"></figure>
+        <p>When <span class="kw">Synchronization Rate</span> reaches 50%, after casting <span class="kw">Basic Attack Stage 4</span>, consume <span class="kw">Synchronization Rate</span> to cast <span class="kw">Enhanced Sync Attack</span> and restore <span class="kw">Resonance Rate</span>.</p>
+        <figure class="gauge"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/5/5c/Aemeath_Forte_Gauge_3.png/revision/latest?cb=20260207035236" alt="Aemeath Forte Gauge 3" loading="lazy"></figure>
+        <p>When <span class="kw">Resonance Rate</span> is full, casting <span class="kw">Enhanced Heavy Attack</span> restores <span class="kw">Synchronization Rate</span>. When both <span class="kw">Synchronization Rate</span> and <span class="kw">Resonance Rate</span> are full, <span class="kw">Resonance Liberation Finisher</span> becomes available.</p>
+    </section>
+    <section>
+        <h2 id="Ascensions_and_Stats">Ascensions and Stats</h2>
+        <p><button type="button" class="wiki-button" id="asc-toggle" aria-pressed="true">Toggle Ascension Materials</button></p>
+        <div class="table-scroll">
+            <table class="wiki-table asc-table" id="asc-table">
+                <thead>
+                    <tr>
+                        <th>Ascension<br>Phase</th>
+                        <th>Level</th>
+                        <th>Base<br>HP</th>
+                        <th>Base<br>ATK</th>
+                        <th>Base<br>DEF</th>
+                        <th class="cost-col">Ascension Costs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="phase">0✦</td>
+                        <td>1/20</td>
+                        <td>882.00</td>
+                        <td>34.00</td>
+                        <td>94.00</td>
+                        <td rowspan="2" class="cost-col">
+                            <div class="cost-label">(0 → 1)</div>
+                            <span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;5,000</span></span>
+                            <span class="item-chip rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span>LF Exoswarm Core &times;4</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20/20</td>
+                        <td>2,293.20</td>
+                        <td>88.40</td>
+                        <td>240.64</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase">1✦</td>
+                        <td>20/40</td>
+                        <td>2,882.38</td>
+                        <td>113.22</td>
+                        <td>301.74</td>
+                        <td rowspan="2" class="cost-col">
+                            <div class="cost-label">(1 → 2)</div>
+                            <span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;10,000</span></span>
+                            <span class="item-chip rarity-4" title="Our Choice"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/80/Item_Our_Choice.png/revision/latest/scale-to-width-down/74?cb=20260205044356" alt="Our Choice" loading="lazy"><span>Our Choice &times;3</span></span>
+                            <span class="item-chip rarity-0" title="Moss Amber"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Item_Moss_Amber.png/revision/latest/scale-to-width-down/74?cb=20260205044439" alt="Moss Amber" loading="lazy"><span>Moss Amber &times;4</span></span>
+                            <span class="item-chip rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span>MF Exoswarm Core &times;4</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>40/40</td>
+                        <td>4,368.10</td>
+                        <td>170.00</td>
+                        <td>456.84</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase">2✦</td>
+                        <td>40/50</td>
+                        <td>4,948.02</td>
+                        <td>196.52</td>
+                        <td>517.94</td>
+                        <td rowspan="2" class="cost-col">
+                            <div class="cost-label">(2 → 3)</div>
+                            <span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;15,000</span></span>
+                            <span class="item-chip rarity-4" title="Our Choice"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/80/Item_Our_Choice.png/revision/latest/scale-to-width-down/74?cb=20260205044356" alt="Our Choice" loading="lazy"><span>Our Choice &times;6</span></span>
+                            <span class="item-chip rarity-0" title="Moss Amber"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Item_Moss_Amber.png/revision/latest/scale-to-width-down/74?cb=20260205044439" alt="Moss Amber" loading="lazy"><span>Moss Amber &times;8</span></span>
+                            <span class="item-chip rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span>MF Exoswarm Core &times;8</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>50/50</td>
+                        <td>5,697.72</td>
+                        <td>224.74</td>
+                        <td>595.96</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase">3✦</td>
+                        <td>50/60</td>
+                        <td>6,288.66</td>
+                        <td>250.92</td>
+                        <td>656.12</td>
+                        <td rowspan="2" class="cost-col">
+                            <div class="cost-label">(3 → 4)</div>
+                            <span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;20,000</span></span>
+                            <span class="item-chip rarity-4" title="Our Choice"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/80/Item_Our_Choice.png/revision/latest/scale-to-width-down/74?cb=20260205044356" alt="Our Choice" loading="lazy"><span>Our Choice &times;9</span></span>
+                            <span class="item-chip rarity-0" title="Moss Amber"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Item_Moss_Amber.png/revision/latest/scale-to-width-down/74?cb=20260205044439" alt="Moss Amber" loading="lazy"><span>Moss Amber &times;12</span></span>
+                            <span class="item-chip rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span>HF Exoswarm Core &times;4</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>60/60</td>
+                        <td>7,029.54</td>
+                        <td>279.48</td>
+                        <td>733.20</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase">4✦</td>
+                        <td>60/70</td>
+                        <td>7,618.72</td>
+                        <td>303.96</td>
+                        <td>794.58</td>
+                        <td rowspan="2" class="cost-col">
+                            <div class="cost-label">(4 → 5)</div>
+                            <span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;40,000</span></span>
+                            <span class="item-chip rarity-4" title="Our Choice"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/80/Item_Our_Choice.png/revision/latest/scale-to-width-down/74?cb=20260205044356" alt="Our Choice" loading="lazy"><span>Our Choice &times;12</span></span>
+                            <span class="item-chip rarity-0" title="Moss Amber"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Item_Moss_Amber.png/revision/latest/scale-to-width-down/74?cb=20260205044439" alt="Moss Amber" loading="lazy"><span>Moss Amber &times;16</span></span>
+                            <span class="item-chip rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span>HF Exoswarm Core &times;8</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>70/70</td>
+                        <td>8,362.95</td>
+                        <td>334.22</td>
+                        <td>872.44</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase">5✦</td>
+                        <td>70/80</td>
+                        <td>8,950.54</td>
+                        <td>351.22</td>
+                        <td>933.39</td>
+                        <td rowspan="2" class="cost-col">
+                            <div class="cost-label">(5 → 6)</div>
+                            <span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;80,000</span></span>
+                            <span class="item-chip rarity-4" title="Our Choice"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/80/Item_Our_Choice.png/revision/latest/scale-to-width-down/74?cb=20260205044356" alt="Our Choice" loading="lazy"><span>Our Choice &times;16</span></span>
+                            <span class="item-chip rarity-0" title="Moss Amber"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Item_Moss_Amber.png/revision/latest/scale-to-width-down/74?cb=20260205044439" alt="Moss Amber" loading="lazy"><span>Moss Amber &times;20</span></span>
+                            <span class="item-chip rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span>FF Exoswarm Core &times;4</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>80/80</td>
+                        <td>9,693.18</td>
+                        <td>379.67</td>
+                        <td>1,010.50</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase">6✦</td>
+                        <td>80/90</td>
+                        <td>10,282.20</td>
+                        <td>396.67</td>
+                        <td>1,071.45</td>
+                        <td rowspan="2" class="cost-col">—</td>
+                    </tr>
+                    <tr>
+                        <td>90/90</td>
+                        <td>11,025.00</td>
+                        <td>425.00</td>
+                        <td>1,148.87</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-cost">
+            <b>Total Cost (0✦ → 6✦)</b>
+            <div class="item-grid">
+                <div class="item-card rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span class="item-card__qty">170,000</span><span class="item-card__name">Shell Credit</span></div>
+                <div class="item-card rarity-4" title="Our Choice"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/80/Item_Our_Choice.png/revision/latest/scale-to-width-down/74?cb=20260205044356" alt="Our Choice" loading="lazy"><span class="item-card__qty">46</span><span class="item-card__name">Our Choice</span></div>
+                <div class="item-card rarity-0" title="Moss Amber"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f3/Item_Moss_Amber.png/revision/latest/scale-to-width-down/74?cb=20260205044439" alt="Moss Amber" loading="lazy"><span class="item-card__qty">60</span><span class="item-card__name">Moss Amber</span></div>
+                <div class="item-card rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span class="item-card__qty">4</span><span class="item-card__name">LF Exoswarm Core</span></div>
+                <div class="item-card rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span class="item-card__qty">12</span><span class="item-card__name">MF Exoswarm Core</span></div>
+                <div class="item-card rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span class="item-card__qty">12</span><span class="item-card__name">HF Exoswarm Core</span></div>
+                <div class="item-card rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span class="item-card__qty">4</span><span class="item-card__name">FF Exoswarm Core</span></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 id="Forte">Forte</h2>
+        <h3 id="Details">Details</h3>
+        <div data-tabs>
+            <div class="wiki-tabs" role="tablist">
+            <button class="wiki-tab" role="tab" data-tab="basic">Basic Attack</button>
             <button class="wiki-tab" role="tab" data-tab="skill">Resonance Skill</button>
-            <button class="wiki-tab" role="tab" data-tab="circuit">Forte Circuit</button>
             <button class="wiki-tab" role="tab" data-tab="liberation">Resonance Liberation</button>
+            <button class="wiki-tab" role="tab" data-tab="circuit">Forte Circuit</button>
+            <button class="wiki-tab" role="tab" data-tab="inherent">Inherent Skills</button>
             <button class="wiki-tab" role="tab" data-tab="intro">Intro Skill</button>
             <button class="wiki-tab" role="tab" data-tab="outro">Outro Skill</button>
-            <button class="wiki-tab" role="tab" data-tab="inherent">Inherent Skill</button>
+            <button class="wiki-tab" role="tab" data-tab="tunebreak">Tune Break</button>
         </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="normal">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Basic Attack</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="basic">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/a/ad/Skill_Sword.png/revision/latest/scale-to-width-down/45?cb=20240529133848" alt="Infinity Calibration" loading="lazy">
+                    <div>
+                        <div class="skill-name">Infinity Calibration</div>
+                        <div class="skill-type">Basic Attack</div>
+                    </div>
+                </div>
+                <h5 class="skill-sub">Basic Attack - Aemeath</h5>
+                <p>Perform up to 4 consecutive attacks, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <h5 class="skill-sub">Heavy Attack - Aemeath</h5>
+                <p>Hold Normal Attack to charge the attack by consuming STA, release to cast Heavy Attack - Aemeath: Charged I, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Hold Normal Attack longer to cast Heavy Attack - Aemeath: Charged II, dealing higher <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>When in Instant Response, Heavy Attack - Aemeath: Charged II charges more quickly. Casting Heavy Attack - Aemeath: Charged II, Heavy Attack - Mech: Charged II, or Resonance Liberation Heavenfall Edict: Finale ends Instant Response.</p>
+                <p>This Skill DMG is considered Resonance Liberation DMG.</p>
+                <p>Press Normal Attack shortly after casting Heavy Attack - Aemeath: Charged I to cast Basic Attack - Aemeath Stage 2.</p>
+                <p>Press Normal Attack shortly after casting Heavy Attack - Aemeath: Charged II to cast Basic Attack - Aemeath Stage 3.</p>
+                <h5 class="skill-sub">Mid-air Attack - Aemeath</h5>
+                <p>Consume STA to perform a Plunging Attack, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Press Normal Attack shortly after casting this skill to cast Basic Attack - Aemeath Stage 2.</p>
+                <h5 class="skill-sub">Dodge Counter - Aemeath</h5>
+                <p>Press Normal Attack shortly after a successful Dodge to attack the target, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Press Normal Attack shortly after casting this skill to cast Basic Attack - Aemeath Stage 4.</p>
+                <details class="scale-details">
+                    <summary>Attribute Scaling</summary>
+                    <div class="table-scroll">
+                        <table class="scale-table">
+                            <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Aemeath Stage 1 DMG</th>
+                                <td>23.31%</td>
+                                <td>25.23%</td>
+                                <td>27.14%</td>
+                                <td>29.81%</td>
+                                <td>31.73%</td>
+                                <td>33.92%</td>
+                                <td>36.98%</td>
+                                <td>40.04%</td>
+                                <td>43.10%</td>
+                                <td>46.35%</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Aemeath Stage 2 DMG</th>
+                                <td>6.99%<br>+<br>10.48%<br>+<br>17.47%</td>
+                                <td>7.56%<br>+<br>11.34%<br>+<br>18.90%</td>
+                                <td>8.14%<br>+<br>12.20%<br>+<br>20.33%</td>
+                                <td>8.94%<br>+<br>13.41%<br>+<br>22.34%</td>
+                                <td>9.51%<br>+<br>14.26%<br>+<br>23.77%</td>
+                                <td>10.17%<br>+<br>15.25%<br>+<br>25.42%</td>
+                                <td>11.09%<br>+<br>16.63%<br>+<br>27.71%</td>
+                                <td>12.00%<br>+<br>18.00%<br>+<br>30.00%</td>
+                                <td>12.92%<br>+<br>19.38%<br>+<br>32.29%</td>
+                                <td>13.89%<br>+<br>20.84%<br>+<br>34.73%</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Aemeath Stage 3 DMG</th>
+                                <td>4.69%*3<br>+<br>9.37%<br>+<br>23.42%</td>
+                                <td>5.07%*3<br>+<br>10.14%<br>+<br>25.34%</td>
+                                <td>5.46%*3<br>+<br>10.91%<br>+<br>27.26%</td>
+                                <td>5.99%*3<br>+<br>11.98%<br>+<br>29.95%</td>
+                                <td>6.38%*3<br>+<br>12.75%<br>+<br>31.87%</td>
+                                <td>6.82%*3<br>+<br>13.63%<br>+<br>34.08%</td>
+                                <td>7.43%*3<br>+<br>14.86%<br>+<br>37.15%</td>
+                                <td>8.05%*3<br>+<br>16.09%<br>+<br>40.22%</td>
+                                <td>8.66%*3<br>+<br>17.32%<br>+<br>43.29%</td>
+                                <td>9.32%*3<br>+<br>18.63%<br>+<br>46.56%</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Aemeath Stage 4 DMG</th>
+                                <td>3.39%*5<br>+<br>50.77%</td>
+                                <td>3.67%*5<br>+<br>54.94%</td>
+                                <td>3.94%*5<br>+<br>59.10%</td>
+                                <td>4.33%*5<br>+<br>64.93%</td>
+                                <td>4.61%*5<br>+<br>69.09%</td>
+                                <td>4.93%*5<br>+<br>73.88%</td>
+                                <td>5.37%*5<br>+<br>80.54%</td>
+                                <td>5.82%*5<br>+<br>87.20%</td>
+                                <td>6.26%*5<br>+<br>93.86%</td>
+                                <td>6.73%*5<br>+<br>100.94%</td>
+                            </tr>
+                            <tr>
+                                <th>Heavy Attack - Aemeath Charged I DMG</th>
+                                <td>9.34%<br>+<br>37.36%</td>
+                                <td>10.11%<br>+<br>40.42%</td>
+                                <td>10.87%<br>+<br>43.48%</td>
+                                <td>11.95%<br>+<br>47.77%</td>
+                                <td>12.71%<br>+<br>50.83%</td>
+                                <td>13.59%<br>+<br>54.36%</td>
+                                <td>14.82%<br>+<br>59.26%</td>
+                                <td>16.04%<br>+<br>64.16%</td>
+                                <td>17.27%<br>+<br>69.06%</td>
+                                <td>18.57%<br>+<br>74.26%</td>
+                            </tr>
+                            <tr>
+                                <th>Heavy Attack - Aemeath Charged II DMG</th>
+                                <td>5.84%*4<br>+<br>93.36%</td>
+                                <td>6.32%*4<br>+<br>101.01%</td>
+                                <td>6.80%*4<br>+<br>108.67%</td>
+                                <td>7.47%*4<br>+<br>119.38%</td>
+                                <td>7.94%*4<br>+<br>127.04%</td>
+                                <td>8.49%*4<br>+<br>135.84%</td>
+                                <td>9.26%*4<br>+<br>148.09%</td>
+                                <td>10.03%*4<br>+<br>160.34%</td>
+                                <td>10.79%*4<br>+<br>172.58%</td>
+                                <td>11.60%*4<br>+<br>185.60%</td>
+                            </tr>
+                            <tr>
+                                <th>Mid-air Attack - Aemeath DMG</th>
+                                <td>43.40%</td>
+                                <td>46.96%</td>
+                                <td>50.52%</td>
+                                <td>55.50%</td>
+                                <td>59.06%</td>
+                                <td>63.16%</td>
+                                <td>68.85%</td>
+                                <td>74.54%</td>
+                                <td>80.24%</td>
+                                <td>86.29%</td>
+                            </tr>
+                            <tr>
+                                <th>Dodge Counter - Aemeath DMG</th>
+                                <td>13.09%*3<br>+<br>26.17%<br>+<br>65.42%</td>
+                                <td>14.16%*3<br>+<br>28.32%<br>+<br>70.78%</td>
+                                <td>15.23%*3<br>+<br>30.46%<br>+<br>76.15%</td>
+                                <td>16.74%*3<br>+<br>33.47%<br>+<br>83.66%</td>
+                                <td>17.81%*3<br>+<br>35.61%<br>+<br>89.02%</td>
+                                <td>19.04%*3<br>+<br>38.08%<br>+<br>95.19%</td>
+                                <td>20.76%*3<br>+<br>41.51%<br>+<br>103.77%</td>
+                                <td>22.48%*3<br>+<br>44.95%<br>+<br>112.36%</td>
+                                <td>24.19%*3<br>+<br>48.38%<br>+<br>120.94%</td>
+                                <td>26.02%*3<br>+<br>52.03%<br>+<br>130.06%</td>
+                            </tr>
+                            <tr>
+                                <th>Heavy Attack - Aemeath STA Cost</th>
+                                <td colspan="10">20</td>
+                            </tr>
+                            <tr>
+                                <th>Mid-air Attack - Aemeath STA Cost</th>
+                                <td colspan="10">30</td>
+                            </tr>
+                        </table>
+                    </div>
+                </details>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="skill">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/8/89/Skill_Shared_Voyage.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="Shared Voyage" loading="lazy">
+                    <div>
+                        <div class="skill-name">Shared Voyage</div>
+                        <div class="skill-type">Resonance Skill</div>
+                    </div>
+                </div>
+                <h5 class="skill-sub">Form Switch</h5>
+                <p>Aemeath can switch forms between herself and her Mech. The Mech inherits Aemeath's Stats and unlocks new moves.</p>
+                <p>Aemeath automatically casts Basic Attack - Stage 1 upon casting Form Switch.</p>
+                <p>While in the Mech form, Aemeath casts Mid-air Attack automatically upon casting Form Switch in mid-air.</p>
+                <h5 class="skill-sub">Sync Strike: Armament Merge</h5>
+                <p>Press Resonance Skill shortly after casting Basic Attack - Aemeath Stage 2, 3 &amp; 4, Heavy Attack - Aemeath, or Dodge Counter - Aemeath to cast Sync Strike: Armament Merge, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Switch into the Mech form after casting this skill. Press the Normal Attack button shortly after to cast Basic Attack - Mech Stage 2.</p>
+                <h5 class="skill-sub">Sync Strike: Call of Dawn</h5>
+                <p>Press Resonance Skill shortly after casting Basic Attack - Mech Stage 2, 3 &amp; 4, Heavy Attack - Mech, or Dodge Counter - Mech to cast Sync Strike: Call of Dawn, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Can be cast in mid-air.</p>
+                <p>Switch into Aemeath after casting this skill. Press the Normal Attack button shortly after to cast Basic Attack - Aemeath Stage 2.</p>
+                <h5 class="skill-sub">Basic Attack - Mech</h5>
+                <p>Perform up to 4 consecutive attacks, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <h5 class="skill-sub">Heavy Attack - Mech</h5>
+                <p>Hold the Normal Attack button to charge by consuming STA, release to cast Heavy Attack - Mech: Charged I to attack the target, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Hold the Normal Attack button longer to cast Heavy Attack - Mech: Charged II, dealing higher <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>When in Instant Response, Heavy Attack - Mech: Charged II charges more quickly. Casting Heavy Attack - Aemeath: Charged II, Heavy Attack - Mech: Charged II, or Resonance Liberation Heavenfall Edict: Finale ends Instant Response.</p>
+                <p>This Skill DMG is considered Resonance Liberation DMG.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <p>Press Normal Attack shortly after casting Heavy Attack - Mech: Charged I to cast Basic Attack - Mech Stage 2.</p>
+                <p>Press Normal Attack shortly after casting Heavy Attack - Mech: Charged II to cast Basic Attack - Mech Stage 3.</p>
+                <h5 class="skill-sub">Mid-air Attack - Mech</h5>
+                <p>Consume STA to perform Plunging Attack, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Press the Normal Attack button shortly after casting this skill to cast Basic Attack - Mech Stage 2.</p>
+                <h5 class="skill-sub">Dodge Counter - Mech</h5>
+                <p>Press the Normal Attack button shortly after a successful Dodge to attack the target, dealing <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Press the Normal Attack button shortly after casting this skill to cast Basic Attack - Mech Stage 4.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <details class="scale-details">
+                    <summary>Attribute Scaling</summary>
+                    <div class="table-scroll">
+                        <table class="scale-table">
+                            <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                            </tr>
+                            <tr>
+                                <th>Sync Strike: Armament Merge DMG</th>
+                                <td>13.54%<br>+<br>20.31%<br>+<br>33.85%</td>
+                                <td>14.65%<br>+<br>21.98%<br>+<br>36.63%</td>
+                                <td>15.76%<br>+<br>23.64%<br>+<br>39.40%</td>
+                                <td>17.32%<br>+<br>25.97%<br>+<br>43.29%</td>
+                                <td>18.43%<br>+<br>27.64%<br>+<br>46.06%</td>
+                                <td>19.70%<br>+<br>29.55%<br>+<br>49.25%</td>
+                                <td>21.48%<br>+<br>32.22%<br>+<br>53.69%</td>
+                                <td>23.26%<br>+<br>34.88%<br>+<br>58.13%</td>
+                                <td>25.03%<br>+<br>37.55%<br>+<br>62.57%</td>
+                                <td>26.92%<br>+<br>40.38%<br>+<br>67.29%</td>
+                            </tr>
+                            <tr>
+                                <th>Sync Strike: Call of Dawn DMG</th>
+                                <td>8.22%*3<br>+<br>57.48%</td>
+                                <td>8.89%*3<br>+<br>62.20%</td>
+                                <td>9.56%*3<br>+<br>66.91%</td>
+                                <td>10.51%*3<br>+<br>73.51%</td>
+                                <td>11.18%*3<br>+<br>78.22%</td>
+                                <td>11.95%*3<br>+<br>83.64%</td>
+                                <td>13.03%*3<br>+<br>91.18%</td>
+                                <td>14.11%*3<br>+<br>98.72%</td>
+                                <td>15.18%*3<br>+<br>106.26%</td>
+                                <td>16.33%*3<br>+<br>114.28%</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Mech Stage 1 DMG</th>
+                                <td>11.67%*3</td>
+                                <td>12.63%*3</td>
+                                <td>13.58%*3</td>
+                                <td>14.92%*3</td>
+                                <td>15.88%*3</td>
+                                <td>16.98%*3</td>
+                                <td>18.51%*3</td>
+                                <td>20.04%*3</td>
+                                <td>21.57%*3</td>
+                                <td>23.20%*3</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Mech Stage 2 DMG</th>
+                                <td>9.34%<br>+<br>37.36%</td>
+                                <td>10.11%<br>+<br>40.42%</td>
+                                <td>10.87%<br>+<br>43.48%</td>
+                                <td>11.95%<br>+<br>47.77%</td>
+                                <td>12.71%<br>+<br>50.83%</td>
+                                <td>13.59%<br>+<br>54.36%</td>
+                                <td>14.82%<br>+<br>59.26%</td>
+                                <td>16.04%<br>+<br>64.16%</td>
+                                <td>17.27%<br>+<br>69.06%</td>
+                                <td>18.57%<br>+<br>74.26%</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Mech Stage 3 DMG</th>
+                                <td>1.96%*6<br>+<br>41.02%<br>+<br>5.86%</td>
+                                <td>2.12%*6<br>+<br>44.38%<br>+<br>6.34%</td>
+                                <td>2.28%*6<br>+<br>47.74%<br>+<br>6.82%</td>
+                                <td>2.50%*6<br>+<br>52.45%<br>+<br>7.50%</td>
+                                <td>2.66%*6<br>+<br>55.82%<br>+<br>7.98%</td>
+                                <td>2.85%*6<br>+<br>59.68%<br>+<br>8.53%</td>
+                                <td>3.10%*6<br>+<br>65.06%<br>+<br>9.30%</td>
+                                <td>3.36%*6<br>+<br>70.44%<br>+<br>10.07%</td>
+                                <td>3.62%*6<br>+<br>75.83%<br>+<br>10.84%</td>
+                                <td>3.89%*6<br>+<br>81.54%<br>+<br>11.65%</td>
+                            </tr>
+                            <tr>
+                                <th>Basic Attack - Mech Stage 4 DMG</th>
+                                <td>20.31%<br>+<br>47.39%</td>
+                                <td>21.98%<br>+<br>51.27%</td>
+                                <td>23.64%<br>+<br>55.16%</td>
+                                <td>25.97%<br>+<br>60.60%</td>
+                                <td>27.64%<br>+<br>64.48%</td>
+                                <td>29.55%<br>+<br>68.95%</td>
+                                <td>32.22%<br>+<br>75.17%</td>
+                                <td>34.88%<br>+<br>81.39%</td>
+                                <td>37.55%<br>+<br>87.60%</td>
+                                <td>40.38%<br>+<br>94.21%</td>
+                            </tr>
+                            <tr>
+                                <th>Heavy Attack - Mech Charged I DMG</th>
+                                <td>46.69%</td>
+                                <td>50.52%</td>
+                                <td>54.35%</td>
+                                <td>59.71%</td>
+                                <td>63.54%</td>
+                                <td>67.94%</td>
+                                <td>74.07%</td>
+                                <td>80.20%</td>
+                                <td>86.32%</td>
+                                <td>92.83%</td>
+                            </tr>
+                            <tr>
+                                <th>Heavy Attack - Mech Charged II DMG</th>
+                                <td>116.69%</td>
+                                <td>126.26%</td>
+                                <td>135.83%</td>
+                                <td>149.23%</td>
+                                <td>158.80%</td>
+                                <td>169.80%</td>
+                                <td>185.11%</td>
+                                <td>200.42%</td>
+                                <td>215.73%</td>
+                                <td>232.00%</td>
+                            </tr>
+                            <tr>
+                                <th>Mid-air Attack - Mech DMG</th>
+                                <td>36.89%<br>+<br>2.17%*3</td>
+                                <td>39.92%<br>+<br>2.35%*3</td>
+                                <td>42.94%<br>+<br>2.53%*3</td>
+                                <td>47.18%<br>+<br>2.78%*3</td>
+                                <td>50.20%<br>+<br>2.96%*3</td>
+                                <td>53.68%<br>+<br>3.16%*3</td>
+                                <td>58.52%<br>+<br>3.45%*3</td>
+                                <td>63.36%<br>+<br>3.73%*3</td>
+                                <td>68.20%<br>+<br>4.02%*3</td>
+                                <td>73.35%<br>+<br>4.32%*3</td>
+                            </tr>
+                            <tr>
+                                <th>Dodge Counter - Mech DMG</th>
+                                <td>4.76%*6<br>+<br>99.82%<br>+<br>14.26%</td>
+                                <td>5.15%*6<br>+<br>108.00%<br>+<br>15.43%</td>
+                                <td>5.54%*6<br>+<br>116.19%<br>+<br>16.60%</td>
+                                <td>6.08%*6<br>+<br>127.65%<br>+<br>18.24%</td>
+                                <td>6.47%*6<br>+<br>135.83%<br>+<br>19.41%</td>
+                                <td>6.92%*6<br>+<br>145.24%<br>+<br>20.75%</td>
+                                <td>7.54%*6<br>+<br>158.34%<br>+<br>22.62%</td>
+                                <td>8.17%*6<br>+<br>171.43%<br>+<br>24.49%</td>
+                                <td>8.79%*6<br>+<br>184.53%<br>+<br>26.37%</td>
+                                <td>9.45%*6<br>+<br>198.44%<br>+<br>28.35%</td>
+                            </tr>
+                            <tr>
+                                <th>Heavy Attack - Mech STA Cost</th>
+                                <td colspan="10">20</td>
+                            </tr>
+                            <tr>
+                                <th>Mid-air Attack - Mech STA Cost</th>
+                                <td colspan="10">30</td>
+                            </tr>
+                            <tr>
+                                <th>Form Switch Cooldown</th>
+                                <td colspan="10">1s</td>
+                            </tr>
+                        </table>
+                    </div>
+                </details>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="liberation">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a3/Skill_Towards_the_Daybreak.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="Towards the Daybreak" loading="lazy">
+                    <div>
+                        <div class="skill-name">Towards the Daybreak</div>
+                        <div class="skill-type">Resonance Liberation</div>
+                    </div>
+                </div>
+                <h5 class="skill-sub">Heavenfall Edict - Overdrive</h5>
+                <p>Deal <span class="text-fusion">Fusion DMG</span>. Switch into Mech form after casting this skill.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <p>Casting this skill grants the following effects:</p>
+                <ul>
+                    <li>Enter Stardust Resonance for 30s.</li>
+                    <li>Enter Heavenfall Edict: Unbound for 60s.</li>
+                </ul>
+                <p>Press Normal Attack shortly after casting this skill to cast Basic Attack - Mech Stage 2.</p>
+                <p>Press Resonance Skill to perform Resonance Skill Form Switch shortly after casting this skill to cast Basic Attack - Aemeath Stage 2.</p>
+                <p>The next Seraphic Duet cast within 30s after casting this skill doesn't consume Rupturous Trail/Fusion Trail.</p>
+                <h5 class="skill-sub">Stardust Resonance</h5>
+                <p>Enhance the effect of Resonance Skill Seraphic Duet.</p>
+                <p>This effect ends after Seraphic Duet is cast 2 times.</p>
+                <h5 class="skill-sub">Heavenfall Edict - Unbound</h5>
+                <p>Heavenfall Edict - Overdrive is replaced with Heavenfall Edict - Finale.</p>
+                <p>When in Heavenfall Edict - Unbound and Resonance Rate reaches the limit, enter Instant Response. Instant Response is removed when the Heavenfall Edict - Unbound state ends.</p>
+                <h5 class="skill-sub">Heavenfall Edict - Finale</h5>
+                <p>Press Resonance Skill or Resonance Liberation to cast Heavenfall Edict: Finale when the following conditions are met:</p>
+                <ul>
+                    <li>Be in the Heavenfall Edict: Unbound state.</li>
+                    <li>Synchronization Rate reaches the limit.</li>
+                    <li>Resonance Rate reaches the limit.</li>
+                </ul>
+                <p>Casting this skill depletes all Synchronization Rate and Resonance Rate, dealing <span class="text-fusion">Fusion DMG</span>, and ends the Heavenfall Edict: Unbound state and Seraphic Duo state.</p>
+                <p>Switch back to Aemeath after casting this skill.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <p class="source-note">The source wiki's scaling table for this skill is currently broken, so no numbers are listed.</p>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="circuit">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/1/1f/Skill_To_Sculpt_the_Silence.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="To Sculpt the Silence" loading="lazy">
+                    <div>
+                        <div class="skill-name">To Sculpt the Silence</div>
+                        <div class="skill-type">Forte Circuit</div>
+                    </div>
+                </div>
+                <h5 class="skill-sub">Seraphic Duo</h5>
+                <p>When casting Basic Attack - Aemeath Stage 4 or Basic Attack - Mech Stage 4, enter Seraphic Duo for 5s.</p>
+                <h5 class="skill-sub">Resonance Skill - Seraphic Duet: Overture</h5>
+                <p>When Aemeath is in Seraphic Duo and the Synchronization Rate is no less than 100 points, Press Resonance Skill to cast Resonance Skill Seraphic Duet: Overture at the cost of 100 points of Synchronization Rate, dealing <span class="text-fusion">Fusion DMG</span>, considered Resonance Liberation DMG.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <p>Switch into the Mech form after casting this skill and exit Seraphic Duo. Press Normal Attack within a certain period of time to cast Basic Attack - Mech Stage 2.</p>
+                <h5 class="skill-sub">Resonance Skill - Seraphic Duet: Encore</h5>
+                <p>In the Mech form, when in Seraphic Duo and the Synchronization Rate is no less than 100 points, press Resonance Skill to cast Resonance Skill Seraphic Duet: Encore at the cost of 100 points of Synchronization Rate, dealing <span class="text-fusion">Fusion DMG</span>, considered Resonance Liberation DMG.</p>
+                <p>Can be cast in mid-air close to the ground.</p>
+                <p>Switch back to Aemeath and exit the Seraphic Duo state. Press Normal Attack shortly afterward to cast Basic Attack - Aemeath Stage 2.</p>
+                <h5 class="skill-sub">Resonance Mode</h5>
+                <ul>
+                    <li>In Resonance Mode - Tune Rupture, when Resonators in the team respond to Tune Rupture - Interfered, inflict 10 stacks of Rupturous Trail on the target for 30s, stacking up to 30 times.</li>
+                    <li>In Resonance Mode - Fusion Burst, when Resonators in the team inflict Fusion Burst, inflict 1 stacks of Fusion Trail for 30s, stacking up to 30 times.</li>
+                </ul>
+                <p>While in combat, when the Fusion Burst on targets near the active Resonator reaches 0 stacks, inflict 1 stack of Fusion Burst. If the targets have more than 5 stacks of Fusion Burst, trigger Fusion Burst based on their max stack limit and remove all of their stacks.</p>
+                <p>In Resonance Mode - Tune Rupture/Resonance Mode - Fusion Burst, inflict Tune Rupture - Shifting/Fusion Burst when the following skills deal damage. The same skill can only trigger this effect on the same target once every 3s:</p>
+                <p>Basic Attack - Aemeath Stage 3 &amp; 4, Basic Attack - Mech Stage 3 &amp; 4, Resonance Skill Sync Strike: Armament Merge, Resonance Skill Sync Strike: Call of Dawn, Intro Skill Songs Across the Universe, and Intro Skill Debut of Meteoric Radiance.</p>
+                <p>Resonance Skill Seraphic Duet gains the following enhancements based on Aemeath's Resonance Mode:</p>
+                <ul>
+                    <li>When in Resonance Mode - Tune Rupture, Resonance Skill Seraphic Duet removes Rupturous Trail stacks on nearby targets and additionally deals 5 instances of Tune Rupture DMG, each time to a random target within range. For each stack of Rupturous Trail removed from a target, the DMG Multiplier of the additional instances of Tune Rupture DMG triggered by Seraphic Duet against the target is increased by 4%. This effect lasts for 1s. The target's Off-Tune Level does not affect the triggering of these instances of Tune Rupture DMG.</li>
+                    <li>When in Resonance Mode - Fusion Burst, Resonance Skill Seraphic Duet removes the Fusion Trail stacks on targets if they are inflicted with Fusion Trail, and trigger the Fusion Burst on the target based on its max stack limit without removing its stacks. Each stack of Fusion Trail removed from the target increases the DMG Multiplier of Fusion Burst on the main target by 10%.</li>
+                </ul>
+                <p>When in Stardust Resonance, Resonance Skill Seraphic Duet gains the following enhancements based on Aemeath's Resonance Mode:</p>
+                <ul>
+                    <li>In Resonance Mode - Tune Rupture, casting Resonance Skill Seraphic Duet additionally deal 10 instances of Tune Rupture DMG.</li>
+                    <li>In Resonance Mode - Fusion Burst, the DMG Multiplier of Fusion Burst triggered by Resonance Skill Seraphic Duet on the main target is additionally increased by 200%. The DMG Multiplier increase effect is stackable with that provided by Fusion Trail.</li>
+                </ul>
+                <h5 class="skill-sub">Tune Rupture Response - Starburst</h5>
+                <p>Active in Resonance Mode - Tune Rupture. Deal <span class="text-fusion">Fusion DMG</span> to targets within range that are affected by Tune Rupture - Interfered, considered Tune Rupture DMG.</p>
+                <h5 class="skill-sub">Starflux Thrust</h5>
+                <p>When in the Mech form and Starflux is more than 200, use the Utility button to cast Starflux Thrust and soar in the air by continuously consuming Starflux.</p>
+                <h5 class="skill-sub">Synchronization Rate</h5>
+                <p>Synchronization Rate is capped at 200 points.</p>
+                <ul>
+                    <li>Dealing damage with Basic Attack - Aemeath, Mid-air Attack - Aemeath, Dodge Counter - Aemeath, Basic Attack - Mech, Mid-air Attack - Mech, Dodge Counter - Mech, Resonance Skill Sync Strike: Armament Merge, and Resonance Skill Sync Strike: Call of Dawn recovers Synchronization Rate.</li>
+                    <li>Casting Intro Skill Songs Across the Universe and Debut of Meteoric Radiance recovers 40 points of Synchronization Rate.</li>
+                    <li>Casting Resonance Liberation Heavenfall Edict: Overdrive recovers 30 points of Synchronization Rate.</li>
+                    <li>When in Instant Response and Heavenfall Edict: Unbound at the same time, casting Heavy Attack - Aemeath Charged II or Heavy Attack - Mech Charged II recovers 200 points of Synchronization Rate.</li>
+                </ul>
+                <h5 class="skill-sub">Resonance Rate</h5>
+                <p>Resonance Rate is capped at 4 points.</p>
+                <ul>
+                    <li>Casting Resonance Skill Seraphic Duet recovers 1 point of Resonance Rate.</li>
+                    <li>Casting Resonance Liberation Heavenfall Edict: Overdrive recovers 1 point of Resonance Rate.</li>
+                    <li>When in Starlume Acceleration, casting Resonance Liberation Heavenfall Edict: Overdrive additionally recovers 1 point of Resonance Rate.</li>
+                </ul>
+                <h5 class="skill-sub">Starflux</h5>
+                <p>Starflux is capped at 600 points.</p>
+                <p>Starflux recovers naturally over time.</p>
+                <details class="scale-details">
+                    <summary>Attribute Scaling</summary>
+                    <div class="table-scroll">
+                        <table class="scale-table">
+                            <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                            </tr>
+                            <tr>
+                                <th>Seraphic Duet: Encore DMG</th>
+                                <td>9.00%*4<br>+<br>18.00%*3<br>+<br>90.00%</td>
+                                <td>9.74%*4<br>+<br>19.48%*3<br>+<br>97.38%</td>
+                                <td>10.48%*4<br>+<br>20.96%*3<br>+<br>104.76%</td>
+                                <td>11.51%*4<br>+<br>23.02%*3<br>+<br>115.10%</td>
+                                <td>12.25%*4<br>+<br>24.50%*3<br>+<br>122.48%</td>
+                                <td>13.10%*4<br>+<br>26.20%*3<br>+<br>130.96%</td>
+                                <td>14.28%*4<br>+<br>28.56%*3<br>+<br>142.77%</td>
+                                <td>15.46%*4<br>+<br>30.92%*3<br>+<br>154.58%</td>
+                                <td>16.64%*4<br>+<br>33.28%*3<br>+<br>166.39%</td>
+                                <td>17.90%*4<br>+<br>35.79%*3<br>+<br>178.93%</td>
+                            </tr>
+                            <tr>
+                                <th>Seraphic Duet: Overture DMG</th>
+                                <td>9.00%<br>+<br>7.50%*6<br>+<br>12.00%*3<br>+<br>30.00%*3</td>
+                                <td>9.74%<br>+<br>8.12%*6<br>+<br>12.99%*3<br>+<br>32.46%*3</td>
+                                <td>10.48%<br>+<br>8.73%*6<br>+<br>13.97%*3<br>+<br>34.92%*3</td>
+                                <td>11.51%<br>+<br>9.60%*6<br>+<br>15.35%*3<br>+<br>38.37%*3</td>
+                                <td>12.25%<br>+<br>10.21%*6<br>+<br>16.33%*3<br>+<br>40.83%*3</td>
+                                <td>13.10%<br>+<br>10.92%*6<br>+<br>17.47%*3<br>+<br>43.66%*3</td>
+                                <td>14.28%<br>+<br>11.90%*6<br>+<br>19.04%*3<br>+<br>47.59%*3</td>
+                                <td>15.46%<br>+<br>12.89%*6<br>+<br>20.61%*3<br>+<br>51.53%*3</td>
+                                <td>16.64%<br>+<br>13.87%*6<br>+<br>22.19%*3<br>+<br>55.47%*3</td>
+                                <td>17.90%<br>+<br>14.92%*6<br>+<br>23.86%*3<br>+<br>59.65%*3</td>
+                            </tr>
+                            <tr>
+                                <th>Tune Rupture Response - Starburst DMG</th>
+                                <td>300.00% Tune AMP</td>
+                                <td>324.60% Tune AMP</td>
+                                <td>349.20% Tune AMP</td>
+                                <td>383.64% Tune AMP</td>
+                                <td>408.24% Tune AMP</td>
+                                <td>436.53% Tune AMP</td>
+                                <td>475.89% Tune AMP</td>
+                                <td>515.25% Tune AMP</td>
+                                <td>554.61% Tune AMP</td>
+                                <td>596.43% Tune AMP</td>
+                            </tr>
+                            <tr>
+                                <th>Seraphic Duet Bonus DMG (Per Instance)</th>
+                                <td>55.00% Tune AMP</td>
+                                <td>59.51% Tune AMP</td>
+                                <td>64.02% Tune AMP</td>
+                                <td>70.34% Tune AMP</td>
+                                <td>74.85% Tune AMP</td>
+                                <td>80.04% Tune AMP</td>
+                                <td>87.25% Tune AMP</td>
+                                <td>94.47% Tune AMP</td>
+                                <td>101.68% Tune AMP</td>
+                                <td>109.35% Tune AMP</td>
+                            </tr>
+                        </table>
+                    </div>
+                </details>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="inherent">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/5/52/Skill_Before_All_Sounds.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="Before All Sounds" loading="lazy">
+                    <div>
+                        <div class="skill-name">Before All Sounds</div>
+                        <div class="skill-type">Inherent Skill</div>
+                    </div>
+                </div>
+                <p>In Instant Response, Heavy Attack - Aemeath and Heavy Attack - Mech gain 200% DMG Amplification.</p>
+                <hr class="skill-divider">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/7/72/Skill_Between_the_Stars.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="Between the Stars" loading="lazy">
+                    <div>
+                        <div class="skill-name">Between the Stars</div>
+                        <div class="skill-type">Inherent Skill</div>
+                    </div>
+                </div>
+                <p>In Resonance Mode - Tune Rupture, when Resonators in the team inflict Tune Rupture - Shifting or deal Tune Rupture DMG, Aemeath's Crit. DMG increases by 20%, up to 3 times. Each Resonator can only trigger this effect once.</p>
+                <p>With 3 stacks, Resonance Liberation Heavenfall Edict: Finale DMG is Amplified by 25%.</p>
+                <p>Resonators joining the team or switching Resonance Mode resets this effect.</p>
+                <p>In Resonance Mode - Fusion Burst, when Resonators in the team inflict Fusion Burst, Aemeath's Crit. DMG increases by 30%, up to 2 times. Each Resonator can only trigger this effect once.</p>
+                <p>With 2 stacks, Resonance Liberation Heavenfall Edict: Finale DMG is Amplified by 25%.</p>
+                <p>Resonators joining the team or switching Resonance Mode resets this effect.</p>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="intro">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/8/83/Skill_Overture_of_Departure.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="Overture of Departure" loading="lazy">
+                    <div>
+                        <div class="skill-name">Overture of Departure</div>
+                        <div class="skill-type">Intro Skill</div>
+                    </div>
+                </div>
+                <h5 class="skill-sub">Songs Across the Universe</h5>
+                <p>Deal <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Cast this skill to enter Starlume Acceleration for 15s.</p>
+                <p>Press Normal Attack shortly after casting this skill to cast Basic Attack - Aemeath Stage 3.</p>
+                <p>Press Resonance Skill and cast Resonance Skill Form Switch shortly after casting this skill to cast Basic Attack - Mech Stage 3 automatically.</p>
+                <h5 class="skill-sub">Debut of Meteoric Radiance</h5>
+                <p>In the Mech form, Songs Across the Universe is replaced with Debut of Meteoric Radiance.</p>
+                <p>Deal <span class="text-fusion">Fusion DMG</span>.</p>
+                <p>Casting this skill grants Starlume Acceleration for 15s.</p>
+                <p>Press Normal Attack shortly after casting this skill to cast Basic Attack - Mech Stage 3.</p>
+                <p>Press Resonance Skill and cast Resonance Skill Form Switch shortly after casting this skill to cast Basic Attack - Aemeath Stage 3 automatically.</p>
+                <h5 class="skill-sub">Starlume Acceleration</h5>
+                <p>In Starlume Acceleration, casting Resonance Liberation Heavenfall Edict: Overdrive addtionally restores Resonance Rate.</p>
+                <p>Casting Resonance Liberation Heavenfall Edict: Overdrive ends Starlume Acceleration.</p>
+                <details class="scale-details">
+                    <summary>Attribute Scaling</summary>
+                    <div class="table-scroll">
+                        <table class="scale-table">
+                            <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                            </tr>
+                            <tr>
+                                <th>Songs Across the Universe DMG</th>
+                                <td>6.77%*2<br>+<br>54.16%</td>
+                                <td>7.33%*2<br>+<br>58.60%</td>
+                                <td>7.88%*2<br>+<br>63.04%</td>
+                                <td>8.66%*2<br>+<br>69.25%</td>
+                                <td>9.22%*2<br>+<br>73.70%</td>
+                                <td>9.85%*2<br>+<br>78.80%</td>
+                                <td>10.74%*2<br>+<br>85.91%</td>
+                                <td>11.63%*2<br>+<br>93.01%</td>
+                                <td>12.52%*2<br>+<br>100.12%</td>
+                                <td>13.46%*2<br>+<br>107.66%</td>
+                            </tr>
+                            <tr>
+                                <th>Debut of Meteoric Radiance DMG</th>
+                                <td>32.85%<br>+<br>49.27%</td>
+                                <td>35.54%<br>+<br>53.31%</td>
+                                <td>38.24%<br>+<br>57.35%</td>
+                                <td>42.01%<br>+<br>63.01%</td>
+                                <td>44.70%<br>+<br>67.05%</td>
+                                <td>47.80%<br>+<br>71.69%</td>
+                                <td>52.11%<br>+<br>78.16%</td>
+                                <td>56.41%<br>+<br>84.62%</td>
+                                <td>60.72%<br>+<br>91.08%</td>
+                                <td>65.30%<br>+<br>97.95%</td>
+                            </tr>
+                            <tr>
+                                <th>Songs Across the Universe Concerto Regen</th>
+                                <td colspan="10">10</td>
+                            </tr>
+                            <tr>
+                                <th>Debut of Meteoric Radiance Concerto Regen</th>
+                                <td colspan="10">10</td>
+                            </tr>
+                        </table>
+                    </div>
+                </details>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="outro">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/1/1f/Skill_Silent_Protection.png/revision/latest/scale-to-width-down/45?cb=20260214184725" alt="Silent Protection" loading="lazy">
+                    <div>
+                        <div class="skill-name">Silent Protection</div>
+                        <div class="skill-type">Outro Skill</div>
+                    </div>
+                </div>
+                <p>When casting this skill, the following effects are triggered based on the Resonance Mode Aemeath is in:</p>
+                <ul>
+                    <li>In Resonance Mode - Tune Rupture: all Resonators in the team except Aemeath gain 10% All-DMG Amplification for 20s. The All-DMG Amplification effect is increased to 20% for Resonators who inflict Tune Rupture - Shifting.</li>
+                    <li>In Resonance Mode - Fusion Burst: all Resonators in the team except Aemeath gain 10% All-DMG Amplification for 20s. The All-DMG Amplification effect is increased to 20% for Resonators who inflict Fusion Burst.</li>
+                </ul>
+                <p>Casting this skill resets the effects above.</p>
+            </div>
+            <div class="wiki-panel skill-panel" role="tabpanel" data-panel="tunebreak">
+                <div class="skill-head">
+                    <img class="skill-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/d/df/Skill_Tune_Break_Sword.png/revision/latest/scale-to-width-down/45?cb=20260121233932" alt="Unlanded Melody" loading="lazy">
+                    <div>
+                        <div class="skill-name">Unlanded Melody</div>
+                        <div class="skill-type">Tune Break</div>
+                    </div>
+                </div>
+                <p>When the target's Off-Tune Level is full, Aemeath can cast Tune Break on the target.</p>
+                <p>Press Normal Attack shortly after casting Tune Break to cast Basic Attack Stage 3.</p>
+                <p>Responding to Tune Rupture - Interfered: when Resonators in the team trigger Tune Break on the target and cause them to be affected by Tune Rupture - Interfered, Aemeath triggers Tune Rupture Response - Starburst. The same target can only be damaged by this skill once every 8s.</p>
+            </div>
+        </div>
+        <h3 id="Skill_Costs">Skill Costs</h3>
+        <h4 id="Main_Forte">Main Forte</h4>
+        <details class="cost-details">
+            <summary>Show Costs Per Level</summary>
+            <div class="table-scroll">
+                <table class="wiki-table cost-table">
+                    <thead>
+                        <tr>
+                            <th>Forte<br>Level</th>
+                            <th>Required<br>Ascension</th>
+                            <th>Shell Credits<br><small>[Subtotal]</small></th>
+                            <th>Materials<br><small>[Subtotal]</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 → 2</td>
+                            <td>2✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;1,500 <small>[1,500]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-2" title="Broken Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/aa/Item_Broken_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210213" alt="Broken Wing Polarizer" loading="lazy"><span>Broken Wing Polarizer &times;2 <small>[2]</small></span></span><span class="item-chip rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span>LF Exoswarm Core &times;2 <small>[2]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>2 → 3</td>
+                            <td>-</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;2,000 <small>[3,500]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-2" title="Broken Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/aa/Item_Broken_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210213" alt="Broken Wing Polarizer" loading="lazy"><span>Broken Wing Polarizer &times;3 <small>[5]</small></span></span><span class="item-chip rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span>LF Exoswarm Core &times;3 <small>[5]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>3 → 4</td>
+                            <td>3✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;4,500 <small>[8,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-3" title="Monowing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/84/Item_Monowing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260106142848" alt="Monowing Polarizer" loading="lazy"><span>Monowing Polarizer &times;2 <small>[2]</small></span></span><span class="item-chip rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span>MF Exoswarm Core &times;2 <small>[2]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>4 → 5</td>
+                            <td>4✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;6,000 <small>[14,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-3" title="Monowing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/84/Item_Monowing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260106142848" alt="Monowing Polarizer" loading="lazy"><span>Monowing Polarizer &times;3 <small>[5]</small></span></span><span class="item-chip rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span>MF Exoswarm Core &times;3 <small>[5]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>5 → 6</td>
+                            <td>-</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;16,000 <small>[30,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-4" title="Polywing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Item_Polywing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210254" alt="Polywing Polarizer" loading="lazy"><span>Polywing Polarizer &times;3 <small>[3]</small></span></span><span class="item-chip rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span>HF Exoswarm Core &times;2 <small>[2]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>6 → 7</td>
+                            <td>5✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;30,000 <small>[60,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-4" title="Polywing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Item_Polywing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210254" alt="Polywing Polarizer" loading="lazy"><span>Polywing Polarizer &times;5 <small>[8]</small></span></span><span class="item-chip rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span>HF Exoswarm Core &times;3 <small>[5]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[1]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>7 → 8</td>
+                            <td>-</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;50,000 <small>[110,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-5" title="Layered Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Item_Layered_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210322" alt="Layered Wing Polarizer" loading="lazy"><span>Layered Wing Polarizer &times;2 <small>[2]</small></span></span><span class="item-chip rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span>FF Exoswarm Core &times;2 <small>[2]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[2]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>8 → 9</td>
+                            <td>6✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;70,000 <small>[180,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-5" title="Layered Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Item_Layered_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210322" alt="Layered Wing Polarizer" loading="lazy"><span>Layered Wing Polarizer &times;3 <small>[5]</small></span></span><span class="item-chip rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span>FF Exoswarm Core &times;3 <small>[5]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[3]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>9 → 10</td>
+                            <td>-</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;100,000 <small>[280,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-5" title="Layered Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Item_Layered_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210322" alt="Layered Wing Polarizer" loading="lazy"><span>Layered Wing Polarizer &times;6 <small>[11]</small></span></span><span class="item-chip rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span>FF Exoswarm Core &times;4 <small>[9]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[4]</small></span></span></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="skill">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Resonance Skill</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
+        </details>
+        <div class="total-cost">
+            <b>Total Cost (1 → 10 for One Main Forte)</b>
+            <div class="item-grid">
+                <div class="item-card rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span class="item-card__qty">280,000</span><span class="item-card__name">Shell Credit</span></div>
+                <div class="item-card rarity-2" title="Broken Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/aa/Item_Broken_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210213" alt="Broken Wing Polarizer" loading="lazy"><span class="item-card__qty">5</span><span class="item-card__name">Broken Wing Polarizer</span></div>
+                <div class="item-card rarity-3" title="Monowing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/84/Item_Monowing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260106142848" alt="Monowing Polarizer" loading="lazy"><span class="item-card__qty">5</span><span class="item-card__name">Monowing Polarizer</span></div>
+                <div class="item-card rarity-4" title="Polywing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Item_Polywing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210254" alt="Polywing Polarizer" loading="lazy"><span class="item-card__qty">8</span><span class="item-card__name">Polywing Polarizer</span></div>
+                <div class="item-card rarity-5" title="Layered Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Item_Layered_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210322" alt="Layered Wing Polarizer" loading="lazy"><span class="item-card__qty">11</span><span class="item-card__name">Layered Wing Polarizer</span></div>
+                <div class="item-card rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span class="item-card__qty">5</span><span class="item-card__name">LF Exoswarm Core</span></div>
+                <div class="item-card rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span class="item-card__qty">5</span><span class="item-card__name">MF Exoswarm Core</span></div>
+                <div class="item-card rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span class="item-card__qty">5</span><span class="item-card__name">HF Exoswarm Core</span></div>
+                <div class="item-card rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span class="item-card__qty">9</span><span class="item-card__name">FF Exoswarm Core</span></div>
+                <div class="item-card rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span class="item-card__qty">4</span><span class="item-card__name">Gold in Memory</span></div>
+            </div>
+        </div>
+        <h4 id="Inherent_Skills">Inherent Skills</h4>
+        <details class="cost-details">
+            <summary>Show Costs Per Level</summary>
+            <div class="table-scroll">
+                <table class="wiki-table cost-table">
+                    <thead>
+                        <tr>
+                            <th>Forte<br>Level</th>
+                            <th>Required<br>Ascension</th>
+                            <th>Shell Credits<br><small>[Subtotal]</small></th>
+                            <th>Materials<br><small>[Subtotal]</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 → 2</td>
+                            <td>2✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;10,000 <small>[10,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-2" title="Broken Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/aa/Item_Broken_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210213" alt="Broken Wing Polarizer" loading="lazy"><span>Broken Wing Polarizer &times;3 <small>[3]</small></span></span><span class="item-chip rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span>LF Exoswarm Core &times;3 <small>[3]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[1]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>2 → 3</td>
+                            <td>4✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;20,000 <small>[30,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-3" title="Monowing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/84/Item_Monowing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260106142848" alt="Monowing Polarizer" loading="lazy"><span>Monowing Polarizer &times;3 <small>[3]</small></span></span><span class="item-chip rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span>MF Exoswarm Core &times;3 <small>[3]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[2]</small></span></span></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="circuit">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Forte Circuit</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
+        </details>
+        <div class="total-cost">
+            <b>Total Cost (0 → 2 for All Inherent Skills)</b>
+            <div class="item-grid">
+                <div class="item-card rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span class="item-card__qty">30,000</span><span class="item-card__name">Shell Credit</span></div>
+                <div class="item-card rarity-2" title="Broken Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/aa/Item_Broken_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210213" alt="Broken Wing Polarizer" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">Broken Wing Polarizer</span></div>
+                <div class="item-card rarity-3" title="Monowing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/8/84/Item_Monowing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260106142848" alt="Monowing Polarizer" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">Monowing Polarizer</span></div>
+                <div class="item-card rarity-2" title="LF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/14/Item_LF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225073951" alt="LF Exoswarm Core" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">LF Exoswarm Core</span></div>
+                <div class="item-card rarity-3" title="MF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/4d/Item_MF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074039" alt="MF Exoswarm Core" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">MF Exoswarm Core</span></div>
+                <div class="item-card rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span class="item-card__qty">2</span><span class="item-card__name">Gold in Memory</span></div>
+            </div>
+        </div>
+        <h4 id="Stat_Bonuses">Stat Bonuses</h4>
+        <details class="cost-details">
+            <summary>Show Costs Per Level</summary>
+            <div class="table-scroll">
+                <table class="wiki-table cost-table">
+                    <thead>
+                        <tr>
+                            <th>Forte<br>Level</th>
+                            <th>Required<br>Ascension</th>
+                            <th>Shell Credits<br><small>[Subtotal]</small></th>
+                            <th>Materials<br><small>[Subtotal]</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 → 2</td>
+                            <td>2✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;50,000 <small>[50,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-4" title="Polywing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Item_Polywing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210254" alt="Polywing Polarizer" loading="lazy"><span>Polywing Polarizer &times;3 <small>[3]</small></span></span><span class="item-chip rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span>HF Exoswarm Core &times;3 <small>[3]</small></span></span></td>
+                        </tr>
+                        <tr>
+                            <td>2 → 3</td>
+                            <td>3✦</td>
+                            <td><span class="item-chip rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span>Shell Credit &times;100,000 <small>[150,000]</small></span></span></td>
+                            <td class="mats"><span class="item-chip rarity-5" title="Layered Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Item_Layered_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210322" alt="Layered Wing Polarizer" loading="lazy"><span>Layered Wing Polarizer &times;3 <small>[3]</small></span></span><span class="item-chip rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span>FF Exoswarm Core &times;3 <small>[3]</small></span></span><span class="item-chip rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span>Gold in Memory &times;1 <small>[1]</small></span></span></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="liberation">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Resonance Liberation</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
-                </table>
+        </details>
+        <div class="total-cost">
+            <b>Total Cost (0 → 2 for One Strand of Stat Bonus)</b>
+            <div class="item-grid">
+                <div class="item-card rarity-3" title="Shell Credit"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png/revision/latest/scale-to-width-down/74?cb=20240523132525" alt="Shell Credit" loading="lazy"><span class="item-card__qty">150,000</span><span class="item-card__name">Shell Credit</span></div>
+                <div class="item-card rarity-4" title="Polywing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Item_Polywing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210254" alt="Polywing Polarizer" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">Polywing Polarizer</span></div>
+                <div class="item-card rarity-5" title="Layered Wing Polarizer"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Item_Layered_Wing_Polarizer.png/revision/latest/scale-to-width-down/74?cb=20260110210322" alt="Layered Wing Polarizer" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">Layered Wing Polarizer</span></div>
+                <div class="item-card rarity-4" title="HF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/43/Item_HF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074119" alt="HF Exoswarm Core" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">HF Exoswarm Core</span></div>
+                <div class="item-card rarity-5" title="FF Exoswarm Core"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/2/24/Item_FF_Exoswarm_Core.png/revision/latest/scale-to-width-down/74?cb=20251225074154" alt="FF Exoswarm Core" loading="lazy"><span class="item-card__qty">3</span><span class="item-card__name">FF Exoswarm Core</span></div>
+                <div class="item-card rarity-4" title="Gold in Memory"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/a/a6/Item_Gold_in_Memory.png/revision/latest/scale-to-width-down/74?cb=20260205044258" alt="Gold in Memory" loading="lazy"><span class="item-card__qty">1</span><span class="item-card__name">Gold in Memory</span></div>
             </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="intro">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Intro Skill</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
-                </table>
-            </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="outro">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Outro Skill</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
-                </table>
-            </div>
-            <div class="wiki-panel" role="tabpanel" data-panel="inherent">
-                <h4 class="skill-name">[Skill name]</h4>
-                <p class="skill-type">Inherent Skill</p>
-                <p>[Describe what this skill does.]</p>
-                <table class="wiki-table">
-                    <tr><th>Attribute</th><td>[value]</td></tr>
-                    <tr><th>Multiplier</th><td>[value]</td></tr>
-                    <tr><th>Energy Regen</th><td>[value]</td></tr>
-                </table>
-            </div>
-    </div>
-
-    <h3 id="Resonance_Chain">Resonance Chain</h3>
-    <p><button type="button" class="wiki-button" id="chain-toggle">Expand all</button></p>
-    <div class="chain-list">
+        </div>
+    </section>
+    <section>
+        <h2 id="Resonance_Chain">Resonance Chain</h2>
+        <p><button type="button" class="wiki-button" id="chain-toggle">Expand all</button></p>
+        <div class="chain-list">
             <details class="chain-card">
-                <summary><span class="chain-card__num">S1</span> [Sequence node 1 name]</summary>
-                <p>[Describe the effect of this Resonance Chain node.]</p>
+                <summary><img class="chain-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/b/be/Sequence_Node_Gilded_Glimmer_of_the_First_Dawn.png/revision/latest/scale-to-width-down/50?cb=20260225022659" alt="Gilded Glimmer of the First Dawn" loading="lazy"><span class="chain-card__num">S1</span><span class="chain-card__name">Gilded Glimmer of the First Dawn</span></summary>
+                <div class="chain-card__body">
+                    <p>In Instant Response, Heavy Attack - Aemeath and Heavy Attack - Mech gain 300% Crit. DMG increase and continuously pull in nearby target while charging.</p>
+                    <p>When Aemeath remains in a state that meets all of the following conditions for over 4s, she enters Instant Response - Brilliance:</p>
+                    <ul>
+                        <li>Out of combat;</li>
+                        <li>Not performing Heavy Attack - Aemeath, Heavy Attack - Mech, or Resonance Liberation Heavenfall Edict: Finale.</li>
+                    </ul>
+                    <p>Instant Response: Brilliance inherits all effects of Instant Response and remains active even when out of the duration of Heavenfall Edict: Unbound.</p>
+                    <p>When in Instant Response - Brilliance and not in Heavenfall Edict: Unbound, casting Heavy Attack - Aemeath Charged II or Heavy Attack - Mech Charged II grants 100 points of Synchronization Rate.</p>
+                    <p>In Resonance Mode - Tune Rupture or Resonance Mode - Fusion Burst, when Aemeath defeats a target affected by help/help, she enters Sealed Trail - Tune Rupture/Sealed Trail - Fusion Burst for {3}s.</p>
+                    <p>While in Sealed Trail - Tune Rupture or Sealed Trail - Fusion Burst, Aemeath records the highest stack count of Rupturous Trail/Fusion Trail among the targets defeated.</p>
+                    <p>Her next skill that directly damages the target immediately inflicts the targets with the recorded stacks of Rupturous Trail/Fusion Trail, up to the current max limit of Rupturous Trail/Fusion Trail. This ends Sealed Trail - Tune Rupture/Sealed Trail - Fusion Burst and Aemeath cannot enter Sealed Trail - Tune Rupture or Sealed Trail - Fusion Burst for 1s.</p>
+                </div>
             </details>
             <details class="chain-card">
-                <summary><span class="chain-card__num">S2</span> [Sequence node 2 name]</summary>
-                <p>[Describe the effect of this Resonance Chain node.]</p>
+                <summary><img class="chain-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/7/7d/Sequence_Node_Downy_Notes_of_Snowfluff.png/revision/latest/scale-to-width-down/50?cb=20260225023240" alt="Downy Notes of Snowfluff" loading="lazy"><span class="chain-card__num">S2</span><span class="chain-card__name">Downy Notes of Snowfluff</span></summary>
+                <div class="chain-card__body">
+                    <p>The DMG Multiplier of Resonance Skill Seraphic Duet: Overture is increased by 100%.</p>
+                    <p>The DMG Multiplier of Resonance Skill Seraphic Duet: Encore is increased by 100%.</p>
+                    <p>While in Resonance Mode - Tune Rupture, when the additional instances Tune Rupture DMG triggered by Resonance Skill Seraphic Duet hit the same target, the DMG Multiplier of the Tune Rupture DMG triggered by Resonance Skill Seraphic Duet against this target is increased by 20% for 1s, stacking up to 5 times.</p>
+                    <p>While in Resonance Mode - Fusion Burst, gain the following effects:</p>
+                    <ul>
+                        <li>In the Stardust Resonance state, the DMG Multiplier of Fusion Burst triggered by Resonance Skill Seraphic Duet is further increased to 400% against the main target of the Fusion Burst.</li>
+                        <li>Fusion Trail now additionally increases the DMG Multiplier of Fusion Trail triggered by Resonance Skill Seraphic Duet. Each stack of Fusion Trail removed now provides a 15% DMG Multiplier increase to Fusion Burst on the main target.</li>
+                        <li>In combat state, when a target near the active Resonator in the team is defeated, immediately trigger Fusion Burst based on the target's current stack limit of Fusion Burst.</li>
+                    </ul>
+                </div>
             </details>
             <details class="chain-card">
-                <summary><span class="chain-card__num">S3</span> [Sequence node 3 name]</summary>
-                <p>[Describe the effect of this Resonance Chain node.]</p>
+                <summary><img class="chain-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/6/6c/Sequence_Node_Fervor_Sightly_Burns_Bright_as_New.png/revision/latest/scale-to-width-down/50?cb=20260225023659" alt="Fervor Sightly Burns Bright as New" loading="lazy"><span class="chain-card__num">S3</span><span class="chain-card__name">Fervor Sightly Burns Bright as New</span></summary>
+                <div class="chain-card__body">
+                    <p>Resonance Liberation Heavenfall Edict: Finale's DMG Multiplier is increased by 100%.</p>
+                    <p>Resonance Liberation Heavenfall Edict: Overdrive's DMG Multiplier is increased by 40%.</p>
+                    <p>In Instant Response, Aemeath now inflicts Tune Rupture - Shifting or Fusion Burst on nearby targets while casting Heavy Attack - Aemeath or Heavy Attack - Mech, based on her current Resonance Mode.</p>
+                    <p>Inherent Skill Between the Stars is replaced with the following effects:</p>
+                    <ul>
+                        <li>In Resonance Mode - Tune Rupture, when Resonators in the team inflict Tune Rupture - Shifting or deal Tune Rupture DMG, Aemeath's Crit. DMG is increased by 60%, and Resonance Liberation Heavenfall Edict: Finale DMG is now Amplified by 25%.</li>
+                    </ul>
+                    <p>Resonators joining the team or switching Resonance Mode resets this effect.</p>
+                    <ul>
+                        <li>In Resonance Mode - Fusion Burst, when Resonators in the team inflict Fusion Burst, Aemeath's Crit. DMG is increased by 60%, and Resonance Liberation Heavenfall Edict: Finale DMG is now Amplified by 25%.</li>
+                    </ul>
+                    <p>Resonators joining the team or switching Resonance Mode resets this effect.</p>
+                </div>
             </details>
             <details class="chain-card">
-                <summary><span class="chain-card__num">S4</span> [Sequence node 4 name]</summary>
-                <p>[Describe the effect of this Resonance Chain node.]</p>
+                <summary><img class="chain-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/e/e0/Sequence_Node_Ethereal_Waltz_on_Binary_Tides.png/revision/latest/scale-to-width-down/50?cb=20260225023937" alt="Ethereal Waltz on Binary Tides" loading="lazy"><span class="chain-card__num">S4</span><span class="chain-card__name">Ethereal Waltz on Binary Tides</span></summary>
+                <div class="chain-card__body">
+                    <p>When casting Intro Skill Songs Across the Universe, Intro Skill Debut of Meteoric Radiance, Resonance Skill Sync Strike and Resonance Skill Seraphic Duet, Resonators in the team gain 20% All-Attribute DMG Bonus for 30s.</p>
+                </div>
             </details>
             <details class="chain-card">
-                <summary><span class="chain-card__num">S5</span> [Sequence node 5 name]</summary>
-                <p>[Describe the effect of this Resonance Chain node.]</p>
+                <summary><img class="chain-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/0/01/Sequence_Node_Voyage_to_the_Astral_Shore.png/revision/latest/scale-to-width-down/50?cb=20260225024347" alt="Voyage to the Astral Shore" loading="lazy"><span class="chain-card__num">S5</span><span class="chain-card__name">Voyage to the Astral Shore</span></summary>
+                <div class="chain-card__body">
+                    <p>When Aemeath defeats a target directly with her skills, Starflux is reset to 100%.</p>
+                    <p>When taking fatal damage, Aemeath is knocked out and turns into 2D Digital Ghost for 5s.</p>
+                    <p>In the 2D Digital Ghost state, Aemeath grants Resonators in the team a Shield equal to 360% of her ATK for 5s. As she exits from the 2D Digital Ghost state, she revives and recovers 100% of her Max HP and 30 points of Resonance Energy. This effect can be triggered once every 10 min.</p>
+                    <p>When Aemeath revives, she exits the 2D Digital Ghost state and removes the Shield provided.</p>
+                </div>
             </details>
             <details class="chain-card">
-                <summary><span class="chain-card__num">S6</span> [Sequence node 6 name]</summary>
-                <p>[Describe the effect of this Resonance Chain node.]</p>
+                <summary><img class="chain-icon" src="https://static.wikia.nocookie.net/wutheringwaves/images/8/8a/Sequence_Node_A_Zephyr-Kissed_Journey_to_You.png/revision/latest/scale-to-width-down/50?cb=20260225024819" alt="A Zephyr-Kissed Journey to You" loading="lazy"><span class="chain-card__num">S6</span><span class="chain-card__name">A Zephyr-Kissed Journey to You</span></summary>
+                <div class="chain-card__body">
+                    <p>Targets take 40% more Resonance Liberation DMG from Aemeath.</p>
+                    <p>When in Resonance Mode - Tune Rupture, Aemeath's Tune Rupture DMG can critically hit, with a fixed Crit. Rate of 80%, and fixed Crit. DMG of 275%.</p>
+                    <p>When in Resonance Mode - Fusion Burst and in combat state, Fusion Burst DMG triggered on targets near the active Resonator in the team can critically hit, with a fixed Crit. Rate of 80%, and fixed Crit. DMG of 275%.</p>
+                    <p>The stacks of Rupturous Trail and Fusion Trail inflicted on the target through Forte Circuit To Sculpt the Silence is doubled.</p>
+                    <p>In Resonance Mode - Tune Rupture/Resonance Mode - Fusion Burst and in combat, the max stack limit of Rupturous Trail/Fusion Trail on the targets near the active Resonator in the team is increased to 60. While casting Resonance Skill Seraphic Duet, inflict 10 stacks of Rupturous Trail/Fusion Trail on targets within range for 30s.</p>
+                </div>
             </details>
-    </div>
-</section>
+        </div>
+        <p class="chain-cost"><b>Each node activation requires</b> <span class="item-chip rarity-4" title="Aemeath's Waveband"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/c/c6/Item_Aemeath%27s_Waveband.png/revision/latest/scale-to-width-down/74?cb=20260316190530" alt="Aemeath&#x27;s Waveband" loading="lazy"><span>Aemeath's Waveband &times;1</span></span></p>
+    </section>
+    <section>
+        <h2 id="Trophies">Trophies</h2>
+        <p>There are <b>3</b> Trophies obtainable from <i>Aemeath</i>:</p>
+        <div class="table-scroll">
+            <table class="wiki-table trophy-table">
+                <thead>
+                    <tr>
+                        <th>Trophy</th>
+                        <th>Group</th>
+                        <th>Description</th>
+                        <th class="num"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/1/16/Item_Astrite.png/revision/latest/scale-to-width-down/30?cb=20240523021541" alt="Astrite" loading="lazy"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A Tiny Palm</td>
+                        <td class="trophy-group"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/41/Trophy_Moments_with_You_Icon.png/revision/latest/scale-to-width-down/20?cb=20240528082850" alt="Moments with You" loading="lazy"> Moments with You</td>
+                        <td>Return to the cabin and tell Aemeath about your journey.</td>
+                        <td class="num">5</td>
+                    </tr>
+                    <tr>
+                        <td>Train to the Vernal Days</td>
+                        <td class="trophy-group"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/4/41/Trophy_Moments_with_You_Icon.png/revision/latest/scale-to-width-down/20?cb=20240528082850" alt="Moments with You" loading="lazy"> Moments with You</td>
+                        <td>Speak with Aemeath on the bench after completing "Starlights from Yesterdays."</td>
+                        <td class="num">5</td>
+                    </tr>
+                    <tr>
+                        <td>The Great Seal</td>
+                        <td class="trophy-group"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/c/c5/Trophy_Resonance_of_Battle_Icon.png/revision/latest/scale-to-width-down/20?cb=20250707201437" alt="Resonance of Battle" loading="lazy"> Resonance of Battle</td>
+                        <td>Use Aemeath's Outro Skill 100 times.</td>
+                        <td class="num">5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2 id="Navigation">Navigation</h2>
+        <div class="resonator-navbox">
+            <div class="nav-group">
+                <div class="nav-group__name">Other</div>
+                <div class="nav-group__list"><span class="res-chip">Rover</span><span class="res-chip" data-attr="Spectro">Shorekeeper</span><span class="res-chip" data-attr="Havoc">Camellya</span><span class="res-chip" data-attr="Havoc">Phrolova</span><span class="res-chip" data-attr="Fusion">Denia</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">Collaboration</div>
+                <div class="nav-group__list"><span class="res-chip" data-attr="Spectro">Lucy</span><span class="res-chip" data-attr="Electro">Rebecca</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">Huanglong</div>
+                <div class="nav-group__list"><span class="res-chip" data-attr="Aero">Jianxin</span><span class="res-chip" data-attr="Aero">Jiyan</span><span class="res-chip" data-attr="Glacio">Lingyang</span><span class="res-chip" data-attr="Electro">Yinlin</span><span class="res-chip" data-attr="Spectro">Jinhsi</span><span class="res-chip" data-attr="Fusion">Changli</span><span class="res-chip" data-attr="Glacio">Zhezhi</span><span class="res-chip" data-attr="Electro">Xiangli Yao</span><span class="res-chip" data-attr="Aero">Qiuyuan</span><span class="res-chip" data-attr="Havoc">Yangyang: Xuanling</span><span class="res-chip" data-attr="Glacio">Suisui</span><span class="res-chip" data-attr="Aero">Qingxiao</span><span class="res-chip" data-attr="Fusion">Jingran</span><span class="res-chip" data-attr="Electro">Hsin</span><span class="res-chip" data-attr="Electro">Suoming</span><span class="res-chip" data-attr="Glacio">Baizhi</span><span class="res-chip" data-attr="Fusion">Chixia</span><span class="res-chip" data-attr="Havoc">Danjin</span><span class="res-chip" data-attr="Glacio">Sanhua</span><span class="res-chip" data-attr="Havoc">Taoqi</span><span class="res-chip" data-attr="Aero">Yangyang</span><span class="res-chip" data-attr="Electro">Yuanwu</span><span class="res-chip" data-attr="Glacio">Youhu</span><span class="res-chip" data-attr="Electro">Lumi</span><span class="res-chip" data-attr="Electro">Buling</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">New Federation</div>
+                <div class="nav-group__list"><span class="res-chip" data-attr="Electro">Calcharo</span><span class="res-chip" data-attr="Fusion">Encore</span><span class="res-chip" data-attr="Spectro">Verina</span><span class="res-chip" data-attr="Spectro">Lynae</span><span class="res-chip" data-attr="Fusion">Mornye</span><span class="res-chip" data-attr="Spectro">Luuk Herssen</span><span class="res-chip" data-attr="Glacio">Lucilla</span><span class="res-chip" data-attr="Aero">Aalto</span><span class="res-chip" data-attr="Fusion">Mortefi</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">Rinascita</div>
+                <div class="nav-group__list"><span class="res-chip" data-attr="Glacio">Carlotta</span><span class="res-chip" data-attr="Havoc">Roccia</span><span class="res-chip" data-attr="Spectro">Phoebe</span><span class="res-chip" data-attr="Fusion">Brant</span><span class="res-chip" data-attr="Havoc">Cantarella</span><span class="res-chip" data-attr="Spectro">Zani</span><span class="res-chip" data-attr="Aero">Ciaccona</span><span class="res-chip" data-attr="Aero">Cartethyia</span><span class="res-chip" data-attr="Fusion">Lupa</span><span class="res-chip" data-attr="Electro">Augusta</span><span class="res-chip" data-attr="Aero">Iuno</span><span class="res-chip" data-attr="Fusion">Galbrena</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">Lahai-Roi</div>
+                <div class="nav-group__list"><span class="res-chip current" data-attr="Fusion">Aemeath</span><span class="res-chip" data-attr="Aero">Sigrika</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">Ashinohara</div>
+                <div class="nav-group__list"><span class="res-chip" data-attr="Havoc">Chisa</span><span class="res-chip" data-attr="Glacio">Hiyuki</span></div>
+            </div>
+            <div class="nav-group">
+                <div class="nav-group__name">Upcoming Resonators</div>
+                <div class="nav-group__list"><span class="res-chip">Lily</span></div>
+            </div>
+        </div>
+    </section>
+    <p class="source-note">Content adapted from the Wuthering Waves Wiki on Fandom (CC-BY-SA).</p>
 </main>
 
     <script src="../../JS/tabs.js"></script>

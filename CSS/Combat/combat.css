@@ -48,28 +48,374 @@ body {
     pointer-events: none;      
 }
 
+
 /* ==========================================================================
    COMBAT PAGE
+   Sections, in page order:
+     1. Page basics      2. Contents box tweak   3. Instructions
+     4. Ascension table  5. Item icons           6. Forte skills
+     7. Skill costs      8. Resonance Chain      9. Trophies
+    10. Navigation box  11. Phone layout
    ========================================================================== */
 
-.material-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; }
-.material-card { background: #242433; border: 1px solid #3c3c52; border-radius: 4px; text-align: center; padding: 8px; }
-.material-card__img {
-    height: 64px; display: flex; align-items: center; justify-content: center;
-    background: linear-gradient(180deg, #3a2f56, #211936); border-radius: 3px;
-    color: #a0a0b8; font-size: 12px; margin-bottom: 6px;
+
+/* ---------- 1. PAGE BASICS ---------- */
+
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
-.material-card__name { font-size: 13px; color: #ffffff; }
-.material-card__qty { font-size: 12px; color: #f1a84b; margin-top: 2px; }
 
-.skill-name { margin: 0 0 2px; font-size: 18px; color: #ffffff; }
-.skill-type { margin: 0 0 10px !important; color: #5897fe; font-size: 14px !important; font-weight: bold; }
+.kw {
+    font-weight: bold;
+}
 
-.chain-list { display: grid; gap: 8px; }
-.chain-card { background: #242433; border: 1px solid #3c3c52; border-radius: 4px; padding: 0 14px; }
-.chain-card summary { cursor: pointer; padding: 10px 0; font-weight: bold; list-style-position: inside; }
-.chain-card[open] summary { border-bottom: 1px solid #2d2d3f; margin-bottom: 8px; }
+.source-note {
+    font-size: 13px;
+    color: #a0a0b8;
+}
+
+
+/* ---------- 2. CONTENTS BOX ---------- */
+/* The box itself is styled in Shared/wiki.css; here it just sits above the text. */
+
+.page-content > .toc {
+    float: none;
+    margin-top: 8px;
+    font-size: 17.1px;      /* Overview's box sits inside 18px text; 95% of that */
+}
+
+
+/* ---------- 3. INSTRUCTIONS ---------- */
+
+.gauge {
+    margin: 14px 0 4px;
+}
+
+.gauge img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------- 4. ASCENSION TABLE ---------- */
+
+.wiki-table.asc-table th,
+.wiki-table.asc-table td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #3c3c52;
+}
+
+.asc-table .phase {
+    font-weight: bold;
+    color: #f1a84b;
+}
+
+.wiki-table.asc-table .cost-col {
+    text-align: left;
+}
+
+.asc-table.hide-costs .cost-col {
+    display: none;
+}
+
+.cost-label {
+    font-size: 12px;
+    color: #a0a0b8;
+    margin-bottom: 2px;
+}
+
+.total-cost {
+    margin: 16px 0;
+}
+
+.total-cost > b {
+    color: #5897fe;
+}
+
+
+/* ---------- 5. ITEM ICONS ---------- */
+
+/* Small inline "icon + name x qty" used inside tables */
+.item-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin: 2px 8px 2px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.item-chip img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Larger icon tile used in the "Total Cost" rows */
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.item-card {
+    width: 74px;
+    text-align: center;
+    font-size: 12px;
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 4px;
+    padding-bottom: 4px;
+}
+
+.item-card img {
+    display: block;
+    width: 74px;
+    height: 74px;
+    object-fit: contain;
+}
+
+.item-card__qty {
+    display: block;
+    font-weight: bold;
+}
+
+.item-card__name {
+    display: block;
+    color: #a0a0b8;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+/* Rarity colour bar (3 = blue, 4 = purple, 5 = gold) */
+.rarity-2 { border-bottom: 3px solid #4fa86b; }
+.rarity-3 { border-bottom: 3px solid #4f8bd6; }
+.rarity-4 { border-bottom: 3px solid #a56ad8; }
+.rarity-5 { border-bottom: 3px solid #e0a83b; }
+.item-chip.rarity-2, .item-chip.rarity-3, .item-chip.rarity-4, .item-chip.rarity-5 { border-bottom: 0; }
+
+
+/* ---------- 6. FORTE SKILLS ---------- */
+
+.skill-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-type {
+    font-size: 13px;
+    color: #a0a0b8;
+}
+
+.skill-sub {
+    margin: 16px 0 4px;
+    font-size: 15px;
+    color: #5897fe;
+}
+
+.skill-panel ul {
+    margin: 4px 0 8px;
+    padding-left: 22px;
+    line-height: 1.5;
+}
+
+.skill-divider {
+    margin: 24px 0;
+    border: 0;
+    border-top: 1px solid #3c3c52;
+}
+
+.text-fusion {
+    color: #f0744e;
+    font-weight: bold;
+}
+
+/* "Attribute Scaling" and "Show Costs" dropdowns */
+.scale-details,
+.cost-details {
+    margin: 14px 0;
+}
+
+.scale-details > summary,
+.cost-details > summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #5897fe;
+}
+
+.scale-table {
+    margin-top: 8px;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.page-content .scale-table th,
+.page-content .scale-table td {
+    padding: 5px 8px;
+    border: 1px solid #3c3c52;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.scale-table th {
+    background: #1c1c24;
+    color: #5897fe;
+}
+
+.scale-table th:first-child {
+    min-width: 190px;
+    text-align: left;
+    white-space: normal;
+}
+
+
+/* ---------- 7. SKILL COSTS ---------- */
+
+.cost-table .mats {
+    text-align: left;
+}
+
+
+/* ---------- 8. RESONANCE CHAIN ---------- */
+
+.chain-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.chain-card {
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 6px;
+}
+
+.chain-card > summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.chain-icon {
+    width: 50px;
+    height: 50px;
+}
+
 .chain-card__num {
-    display: inline-block; min-width: 28px; text-align: center; margin-right: 8px;
-    background: #3065b0; color: #fff; border-radius: 3px; padding: 1px 6px; font-size: 13px;
+    font-weight: bold;
+    color: #f1a84b;
+}
+
+.chain-card__name {
+    font-weight: bold;
+}
+
+.chain-card__body {
+    padding: 0 16px 12px;
+    border-top: 1px solid #3c3c52;
+}
+
+.chain-card__body ul {
+    padding-left: 22px;
+    line-height: 1.5;
+}
+
+.chain-cost {
+    margin-top: 14px;
+}
+
+
+/* ---------- 9. TROPHIES ---------- */
+
+.trophy-table .num {
+    text-align: center;
+}
+
+.trophy-group img {
+    vertical-align: middle;
+}
+
+
+/* ---------- 10. NAVIGATION BOX ---------- */
+
+.resonator-navbox {
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.nav-group {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #2d2d3f;
+}
+
+.nav-group:last-child {
+    border-bottom: 0;
+}
+
+.nav-group__name {
+    flex: 0 0 130px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5897fe;
+}
+
+.nav-group__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.res-chip {
+    padding: 1px 9px;
+    border: 1px solid #3c3c52;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.res-chip.current {
+    background: #3065b0;
+    border-color: #3065b0;
+}
+
+.res-chip[data-attr="Fusion"]  { border-color: #f0744e; }
+.res-chip[data-attr="Aero"]    { border-color: #55ffb5; }
+.res-chip[data-attr="Glacio"]  { border-color: #41aefb; }
+.res-chip[data-attr="Electro"] { border-color: #b96bff; }
+.res-chip[data-attr="Spectro"] { border-color: #f5e46b; }
+.res-chip[data-attr="Havoc"]   { border-color: #e649a6; }
+
+
+/* ---------- 11. PHONE LAYOUT ---------- */
+
+@media (max-width: 600px) {
+    .nav-group {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .nav-group__name {
+        flex: none;
+    }
 }
