@@ -1,0 +1,596 @@
+/* ==========================================================================
+   BASE PAGE LAYOUT STYLES  (same as every other page of the wiki)
+   ========================================================================== */
+
+body {
+    background-color: #1d2530;
+}
+
+/* TOP OF PAGE CATEGORIES AND TITLE */
+.page-header__categories-in {
+    color: whitesmoke;
+}
+
+.in_links, .in_links * {
+    color: #5897fe;
+}
+
+.mw-page-title-main {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+/* NAVIGATION LINKS BOX STYLE */
+.boxed-link {
+    background-color: rgb(48, 101, 176, 0.5);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #333333;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.boxed-link:hover {
+    background-color: #3065b0;
+    color: #333333;
+}
+
+.boxed-link.active-tab {
+    background-color: #3065b0;
+    color: #fdfeff;
+    border-color: #3065b0;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+/* ==========================================================================
+   PROFILE PAGE
+   Sections, in page order:
+     1. Layout           2. Intro + quote      3. Education table
+     4. Tech stack       5. Projects           6. Hobbies
+     7. Contact          8. Infobox (right)    9. Phone layout
+   ========================================================================== */
+
+
+/* ---------- 1. LAYOUT (text on the left, infobox on the right) ---------- */
+
+/* The layout below sets its own width, so the 1100px cap from wiki.css is not needed here. */
+main.page-content {
+    max-width: none;
+}
+
+/* Text on the left, infobox pinned to the right edge of the window - same as the Overview page. */
+.profile-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;              /* same 20px as the Overview page */
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 0;               /* lets long text wrap instead of stretching the page */
+}
+
+.profile-section {
+    clear: both;
+}
+
+/* Right-hand column: infobox, then Hobbies, then Connect With Me */
+.profile-side {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.page-content .profile-section--side h2 {
+    font-size: 22px;
+    margin-top: 28px;
+}
+
+.profile-section--side .hobby-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.profile-section--side .hobby-card span {
+    font-size: 14px;
+}
+
+.profile-section--side .contact-list li {
+    flex-wrap: wrap;
+    gap: 4px 10px;
+}
+
+.profile-section--side .contact-label {
+    flex-basis: 100%;
+    font-size: 13px;
+}
+
+.profile-section--side .contact-value {
+    font-size: 15px;
+}
+
+.text-accent {
+    color: #f0744e;             /* same orange as the Fusion text on the other pages */
+    font-weight: bold;
+}
+
+
+/* ---------- 2. INTRO + QUOTE ---------- */
+
+.page-content .profile-intro {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.page-content .toc {
+    float: none;                /* sits above the text, like on the Combat page */
+    font-size: 17.1px;
+}
+
+blockquote.quote {
+    margin: 12px 0;
+    padding: 0 30px;
+    font-size: 18px;
+    background: #4e57741a;
+    border-left: 3px solid #3c4f6a;
+    overflow: hidden;
+}
+
+blockquote.quote::before,
+blockquote.quote::after {
+    display: block;
+    font-family: serif;
+    font-size: 50px;
+    line-height: 1em;
+    color: #5897fe;
+}
+
+blockquote.quote::before {
+    content: '\201C';
+    margin: 0 0 -20px -20px;
+}
+
+blockquote.quote::after {
+    content: '\201D';
+    float: right;
+    margin: 0 -20px -10px 0;
+}
+
+.page-content .quote__text {
+    font-size: 18px;
+    margin-bottom: 0;
+    overflow-wrap: break-word;
+}
+
+
+/* ---------- 3. EDUCATION TABLE ---------- */
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #242433;
+    border: 1px solid #3c3c52;
+}
+
+.profile-table th,
+.profile-table td {
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #2d2d3f;
+}
+
+.profile-table th {
+    width: 30%;
+    color: #5897fe;
+}
+
+
+/* ---------- 4. TECH STACK ---------- */
+
+.stack-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.stack-group {
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 6px;
+    padding: 4px 16px 16px;
+}
+
+.page-content .stack-group h3 {
+    font-size: 16px;
+    color: #5897fe;
+}
+
+.chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chip {
+    padding: 2px 11px;
+    border: 1px solid #3c3c52;
+    border-radius: 12px;
+    background: #1a1a24;
+    font-size: 14px;
+}
+
+.chip--blue   { border-color: #3f7bf3; }
+.chip--fusion { border-color: #f0744e; }
+
+
+/* ---------- 5. FEATURED PROJECTS ---------- */
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.filter-btn {
+    background: #1a1a24;
+    color: #a0a0b8;
+    border: 1px solid #3c3c52;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    color: #ffffff;
+}
+
+.filter-btn.active {
+    background: #3065b0;
+    border-color: #3065b0;
+    color: #ffffff;
+}
+
+.filter-btn:focus-visible {
+    outline: 2px solid #3f7bf3;
+    outline-offset: 2px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-card {
+    display: flex;
+    gap: 16px;
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.project-card[hidden] {
+    display: none;
+}
+
+.project-card__num {
+    flex: 0 0 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    background: #2b549c;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.project-card__body {
+    flex: 1;
+    min-width: 0;
+}
+
+.page-content .project-card h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.page-content .project-card p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.page-content .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.project-link--off {
+    color: #a0a0b8;
+    font-size: 14px;
+}
+
+.project-empty {
+    color: #a0a0b8;
+    font-style: italic;
+}
+
+
+/* ---------- 6. HOBBIES ---------- */
+
+.hobby-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.hobby-card {
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 6px;
+    padding: 12px 14px;
+    transition: border-color 0.15s ease;
+}
+
+.hobby-card:hover {
+    border-color: #5897fe;
+}
+
+.hobby-card b {
+    display: block;
+    margin-bottom: 4px;
+    color: #5897fe;
+}
+
+.hobby-card span {
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+
+/* ---------- 7. CONTACT ---------- */
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 6px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #2d2d3f;
+}
+
+.contact-list li:last-child {
+    border-bottom: 0;
+}
+
+.contact-label {
+    flex: 0 0 130px;
+    font-weight: bold;
+    color: #5897fe;
+}
+
+.contact-value {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.page-content a.contact-value {
+    color: #ffffff;
+}
+
+.copy-btn {
+    background: #3065b0;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background: #3f7bf3;
+}
+
+.copy-btn.copied {
+    background: #2f8f5b;
+}
+
+
+/* ---------- 8. INFOBOX (right column) ---------- */
+
+.profile-card {
+    width: 100%;
+    background: #242433;
+    border: 1px solid #3c3c52;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.profile-card__title {
+    background: #2b549c;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.profile-card__subtitle {
+    background: #1c1c24;
+    color: #3f7bf3;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #3c3c52;
+}
+
+.profile-card__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    background: linear-gradient(180deg, #3a2f56, #211936);
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #5897fe;
+}
+
+.profile-card__tabs {
+    display: flex;
+    background: #1a1a24;
+    border-top: 1px solid #3c3c52;
+    border-bottom: 1px solid #3c3c52;
+}
+
+.profile-card__tab {
+    flex: 1;
+    padding: 8px 0;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #a0a0b8;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.profile-card__tab:hover {
+    color: #ffffff;
+}
+
+.profile-card__tab.active {
+    color: #ffffff;
+    background: #242433;
+    border-bottom-color: #3f7bf3;
+}
+
+.profile-card__tab:focus-visible {
+    outline: 2px solid #3f7bf3;
+    outline-offset: -2px;
+}
+
+.profile-card__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-card__table[hidden] {
+    display: none;
+}
+
+.profile-card__table th,
+.profile-card__table td {
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #2d2d3f;
+}
+
+.profile-card__table th {
+    width: 35%;
+    color: #5897fe;
+}
+
+.profile-card__table a {
+    color: #5897fe;
+    text-decoration: none;
+}
+
+.profile-card__table a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- 9. PHONE LAYOUT ---------- */
+
+@media (max-width: 900px) {
+    .profile-layout {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* Right column (infobox + hobbies + contact) moves above the text, like on the Overview page */
+    .profile-side {
+        order: -1;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .page-content .toc {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .mw-page-title-main {
+        font-size: 32px;
+    }
+
+    .boxed-link {
+        font-size: 16px;
+        padding: 8px 14px;
+        margin-right: 8px;
+    }
+
+    .page-content .profile-intro {
+        font-size: 18px;
+    }
+
+    blockquote.quote {
+        padding: 0 20px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-list li {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .contact-label {
+        flex-basis: 100%;
+    }
+}
